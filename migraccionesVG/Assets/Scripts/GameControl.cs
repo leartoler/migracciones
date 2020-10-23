@@ -11,7 +11,7 @@ public class GameControl : MonoBehaviour
     public static int diceSideThrown = 0;
     public static int player1StartWaypoint = 0;
     public static bool gameOver = false;
-    public New_Level newLevel;
+    //public New_Level newLevel;
     //public BoxCollider2D collider2D;
 
     // Start is called before the first frame update
