@@ -41,7 +41,7 @@ public class GameControl : MonoBehaviour
             player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;
             
                 if (player1.GetComponent<FollowThePath>().waypointIndex ==
-                player1.GetComponent<FollowThePath>().waypoints.Length - 30)
+                player1.GetComponent<FollowThePath>().waypoints.Length - 4)
             {
                 SceneManager.LoadScene("Punto1");
             }
@@ -59,7 +59,7 @@ public class GameControl : MonoBehaviour
 
             //SceneManager.LoadScene("Punto2");//<--------
             //collider2D.enabled = true; // 7:23
-            Debug.Log("wewewew");
+            //Debug.Log("wewewew");
 
             //Se pondr[ia au[i lo del ontriggerenter
 

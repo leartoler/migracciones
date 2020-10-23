@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement; //6:03
+
 
 
 public class BackGround_Manager : MonoBehaviour
@@ -65,6 +67,10 @@ public class BackGround_Manager : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             currentSprite++;
+        }
+        else if (currentSprite == 9)
+        {
+            SceneManager.LoadScene("Main2");
         }
 
     }

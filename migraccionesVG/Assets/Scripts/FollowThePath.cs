@@ -14,8 +14,12 @@ public class FollowThePath : MonoBehaviour {
 
 	// Use this for initialization
 	private void Start () {
+        //Debug.Log("Esta Madre no jala");
         transform.position = waypoints[waypointIndex].transform.position;
-	}
+
+
+    }
+
 	
 	// Update is called once per frame
 	private void Update () {
@@ -27,6 +31,7 @@ public class FollowThePath : MonoBehaviour {
     {
         if (waypointIndex <= waypoints.Length - 1)
         {
+
             transform.position = Vector2.MoveTowards(transform.position,
             waypoints[waypointIndex].transform.position,
             moveSpeed * Time.deltaTime);
@@ -34,6 +39,7 @@ public class FollowThePath : MonoBehaviour {
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
                 waypointIndex += 1;
+
             }
         }
     }
