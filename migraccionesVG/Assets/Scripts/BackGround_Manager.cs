@@ -70,7 +70,7 @@ public class BackGround_Manager : MonoBehaviour
         }
         else if (currentSprite == 9)
         {
-            SceneManager.LoadScene("Main2");
+            SceneManager.LoadScene("Main");
         }
 
     }

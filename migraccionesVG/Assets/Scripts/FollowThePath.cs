@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class FollowThePath : MonoBehaviour {
+public class FollowThePath : MonoBehaviour
+{
 
     public Transform[] waypoints;
 
@@ -12,20 +13,22 @@ public class FollowThePath : MonoBehaviour {
 
     public bool moveAllowed = false;
 
-	// Use this for initialization
-	private void Start () {
+    // Use this for initialization
+    private void Start()
+    {
         //Debug.Log("Esta Madre no jala");
-        transform.position = waypoints[waypointIndex].transform.position;
+        transform.position = waypoints[waypointIndex + 3].transform.position; //Se cami a tres en waypoin index
 
 
     }
 
-	
-	// Update is called once per frame
-	private void Update () {
+
+    // Update is called once per frame
+    private void Update()
+    {
         if (moveAllowed)
             Move();
-	}
+    }
 
     private void Move()
     {
@@ -43,4 +46,6 @@ public class FollowThePath : MonoBehaviour {
             }
         }
     }
-}
+  
+    }
+
