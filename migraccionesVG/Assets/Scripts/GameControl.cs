@@ -30,9 +30,9 @@ public class GameControl : MonoBehaviour
             player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;
 
             if (player1.GetComponent<FollowThePath>().waypointIndex ==
-            player1.GetComponent<FollowThePath>().waypoints.Length - 3)
+            player1.GetComponent<FollowThePath>().waypoints.Length - 2) //longitud desde el inicio
             {
-                SceneManager.LoadScene("Tenosique");
+                SceneManager.LoadScene("HistoriaPollero");
             }
         }
     }

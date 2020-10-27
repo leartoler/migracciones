@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_Manager : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "Backgrounds";
+    public string resourceName = "HistoriaPollero";
     public Sprite[] backgrounds;
 
 
@@ -17,6 +17,8 @@ public class BackGround_Manager : MonoBehaviour
         if (resourceName != "")
             backgrounds = Resources.LoadAll<Sprite>(resourceName);
     }
+
+    
 
 
     public void OnClickChangeBackground()
@@ -70,7 +72,7 @@ public class BackGround_Manager : MonoBehaviour
         }
         else if (currentSprite == 9)
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("InicioTenosique");
         }
 
     }
