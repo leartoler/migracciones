@@ -17,7 +17,7 @@ public class FollowThePath : MonoBehaviour
     private void Start()
     {
         //Debug.Log("Esta Madre no jala");
-        transform.position = waypoints[waypointIndex + 3].transform.position; //Se cami a tres en waypoin index
+        transform.position = waypoints[waypointIndex].transform.position; //Se cami a tres en waypoin index
 
 
     }

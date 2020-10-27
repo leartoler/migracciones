@@ -8,12 +8,16 @@ public class Dice : MonoBehaviour
     private SpriteRenderer rend;
     private int whosTurn = 1;
     private bool coroutineAllowed = true;
+    public AudioSource noise1;
+    public AudioSource[] sounds;
     // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<SpriteRenderer>();
         diceSides = Resources.LoadAll<Sprite>("DiceSides/");
         rend.sprite = diceSides[2]; //por los tras lados del dado
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
     }
 
     // Update is called once per frame
@@ -23,8 +27,9 @@ public class Dice : MonoBehaviour
     {
         if (!GameControl.gameOver && coroutineAllowed)
             StartCoroutine("RollTheDice");
+        noise1.Play();// aber
     }
-
+    
     private IEnumerator RollTheDice()
     {
         coroutineAllowed = false;
