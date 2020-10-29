@@ -34,6 +34,11 @@ public class GameControl : MonoBehaviour
             {
                 SceneManager.LoadScene("HistoriaPollero");
             }
+            if (player1.GetComponent<FollowThePath>().waypointIndex ==
+           player1.GetComponent<FollowThePath>().waypoints.Length - 5) //longitud desde el inicio
+            {
+                SceneManager.LoadScene("MaraTeEncontro");
+            }
         }
     }
     public static void MovePlayer(int playerToMove)
