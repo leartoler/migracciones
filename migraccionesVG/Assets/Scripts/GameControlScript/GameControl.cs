@@ -17,8 +17,8 @@ public class GameControl : MonoBehaviour
         whoWinsTextShadow = GameObject.Find("WhowinsText");   
         player1 = GameObject.Find("Player1");
         player1.GetComponent<FollowThePath>().moveAllowed = false;
-        whoWinsTextShadow.gameObject.SetActive(false);
-        player1MoveText.gameObject.SetActive(true);        
+        //whoWinsTextShadow.gameObject.SetActive(false);
+        //player1MoveText.gameObject.SetActive(true);        
     }
        
     void Update()
@@ -35,9 +35,14 @@ public class GameControl : MonoBehaviour
                 SceneManager.LoadScene("HistoriaPollero");
             }
             if (player1.GetComponent<FollowThePath>().waypointIndex ==
-           player1.GetComponent<FollowThePath>().waypoints.Length - 5) //longitud desde el inicio
+           player1.GetComponent<FollowThePath>().waypoints.Length - 3) //longitud desde el inicio
             {
                 SceneManager.LoadScene("MaraTeEncontro");
+            }
+            if (player1.GetComponent<FollowThePath>().waypointIndex ==
+           player1.GetComponent<FollowThePath>().waypoints.Length - 5) //longitud desde el inicio
+            {
+                SceneManager.LoadScene("TeAgarroMigracion");
             }
         }
     }

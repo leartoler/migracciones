@@ -1,19 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.SceneManagement; //6:03
+using UnityEngine.SceneManagement; 
 
-
-
-public class BackGround_RoboEnMexicali : MonoBehaviour
+public class BackGround_TeAgarroMigracion : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "RoboEnMexicali";
+    public string resourceName = "TeAgarroMigracion";
     public Sprite[] backgrounds;
     
     void Awake()
     {
-        if (resourceName != "") //De donde se toman los nombres para las escenas
+        if (resourceName != "") //De donde se toman los nombres para las escenas. Empty
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
@@ -25,42 +23,35 @@ public class BackGround_RoboEnMexicali : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Cerca de la frontera, y con el cuerpo completamente cansado, te anocheció. Buscas, con las pocas fuerzas que te quedan, un lugar dónde descansar.";
+            txtMy.text = "Continuando en tu camino, con el sol dándote en el rostro y a un lado de las vías del tren, sientes una tranquilidad inusitada.";
             currentSprite++;
         }
-
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Encuentras un lugar para descansar, pero la soledad del lugar no te la confianza necesaria.";
+            txtMy.text = "No tienes idea que detrás de los arbustos que están a tu lado, una camioneta del Instituto Nacional de Migración te ha estado vigilando y está a punto de emboscarte.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Al final el cansanció ten ganó.Te acuestas y dejas tu mochila a un lado.";
+            txtMy.text = "Al final, te emboscan y sientes que no hay nada que hacer.. el oficial sale y sin resitirte, te subes a la camioneta que arruinará todo tu avance hacia tu destino.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con los ojos cerrados, crees escuchar algo, pero no le das la suficiente importancia. Sigues durmiendo.";
+            txtMy.text = "De regreso a Tenosique, caes en la cuenta de que tendrás que repetir toda tu travesía.";
             currentSprite++;
-        }
+        }       
         else if (currentSprite == 4)
-        {
-            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Al levantarte, miras a tu alrededor: tus cosas han desaparecido. Con la tristeza e impotencia no te queda más que resignarte, levantarte y continuar con tu trayecto.";
-            currentSprite++;
-        } 
-        else if (currentSprite == 5)
-        {
-            SceneManager.LoadScene("InicioRoboEnMexicali");
+        {         
+            SceneManager.LoadScene("Inicio_TeAgarróMigracion");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
+
     }
 }

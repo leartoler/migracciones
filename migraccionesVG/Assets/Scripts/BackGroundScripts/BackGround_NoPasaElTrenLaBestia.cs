@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement; //6:03
 
 
 
-public class BackGroundNoPasaTren : MonoBehaviour
+public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
 {
     public static int currentSprite = 0;
     public string resourceName = "NoPasaElTrenLaBestia";
@@ -25,10 +25,9 @@ public class BackGroundNoPasaTren : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Escuchaste alguna vez que, por donde estás, pasaba el ferrocaril a la que llaman "La Bestia", la cual te acercará a tu destino.";
+            txtMy.text = "Escuchaste alguna vez que, por donde estás, pasaba el ferrocaril a la que llaman La Bestia, la cual te acercará a tu destino.";
             currentSprite++;
         }
-
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
@@ -41,7 +40,7 @@ public class BackGroundNoPasaTren : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Después de tanto caminar, te encuentras con las vías que parecen ser de "La Bestia". La tomas como guía y te diriges hacia donde te lleve.";
+            txtMy.text = "Después de tanto caminar, te encuentras con las vías que parecen ser de La Bestia. La tomas como guía y te diriges hacia donde te lleve.";
             currentSprite++;
         }
         else if (currentSprite == 3)
@@ -69,14 +68,13 @@ public class BackGroundNoPasaTren : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te duermes. Para cuando despiertas sabes que, por el momento, no pasará "La Bestia". Continuas con tu camino esperando recuperar el tiempo perdido.";
+            txtMy.text = "Te duermes. Para cuando despiertas sabes que, por el momento, no pasará La Bestia. Continuas con tu camino esperando recuperar el tiempo perdido.";
             currentSprite++;
         }       
-        else if (currentSprite == 9)
+        else if (currentSprite == 7)
         {
             SceneManager.LoadScene("InicioTren");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
-
     }
 }
