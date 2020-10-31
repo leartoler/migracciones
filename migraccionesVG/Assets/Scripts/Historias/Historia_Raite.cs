@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Levels : MonoBehaviour
+public class Historia_Raite : MonoBehaviour
 {
 	public GameObject player1;
 	public float timeLeft = 1f;
@@ -21,7 +21,7 @@ public class Levels : MonoBehaviour
     		timeLeft -= Time.deltaTime;
     		if (timeLeft <= 0)
     		{    			
-    			SceneManager.LoadScene("Historia_Pollero");
+    			SceneManager.LoadScene("Historia_Raite");
     			
     		}    		
     	}
