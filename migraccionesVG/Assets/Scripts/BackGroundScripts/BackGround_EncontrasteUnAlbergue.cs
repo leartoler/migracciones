@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_EncontrasteUnAlbergue : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "BackGround_EncontrasteUnAlbergue";
+    public string resourceName = "EncontrasteUnAlbergue";
     public Sprite[] backgrounds;
     
     void Awake()

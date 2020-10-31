@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement; 
 
-public class GameControl : MonoBehaviour
+public class GameControl_InicioMaras : MonoBehaviour
 {
     private static GameObject whoWinsTextShadow, player1MoveText;
     private static GameObject player1;
@@ -14,9 +14,12 @@ public class GameControl : MonoBehaviour
     
     void Start()
     {
-        whoWinsTextShadow = GameObject.Find("WhowinsText");   
+        //whoWinsTextShadow = GameObject.Find("WhowinsText");   
         player1 = GameObject.Find("Player1");
-        player1.GetComponent<FollowThePath>().moveAllowed = false;               
+        //Pollero = GameObject.Find("Pollero");
+        player1.GetComponent<FollowThePath>().moveAllowed = false;
+        //whoWinsTextShadow.gameObject.SetActive(false);
+        //player1MoveText.gameObject.SetActive(true);        
     }
        
     void Update()
@@ -25,10 +28,10 @@ public class GameControl : MonoBehaviour
             player1StartWaypoint + diceSideThrown)
         {
             player1.GetComponent<FollowThePath>().moveAllowed = false;            
-            player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;           
+            player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;
+                     
         }
     }
-
     public static void MovePlayer(int playerToMove)
     {
         switch (playerToMove)
@@ -37,5 +40,6 @@ public class GameControl : MonoBehaviour
                 player1.GetComponent<FollowThePath>().moveAllowed = true;
                 break;
         }
+
     }
 }

@@ -280,20 +280,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 261810378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 951c3878eb7e1db45b6927fa832286f9, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2d084814aaf42871d19c40fc0cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceName: HistoriaPollero
+  resourceName: NoPasaElTrenLaBestia
   backgrounds:
-  - {fileID: 21300000, guid: a85eca84ca49d0b4f8678e3fc0d81e78, type: 3}
-  - {fileID: 21300000, guid: 69f17c93c75668242b4a02e1b95a7c56, type: 3}
-  - {fileID: 21300000, guid: f57955b54eb678f4b8da97b6c5c02f32, type: 3}
-  - {fileID: 21300000, guid: 79cc18362c9e63f4b977e6d36443968e, type: 3}
-  - {fileID: 21300000, guid: 317a22929a627fa479ae9c34a030e998, type: 3}
-  - {fileID: 21300000, guid: 7a6dcf0a9611d084b955afd44a7998c0, type: 3}
-  - {fileID: 21300000, guid: 5bcb051818504f545a3f91b40ef3c415, type: 3}
-  - {fileID: 21300000, guid: 25cf56c027737014686368d6d4f0eb66, type: 3}
-  - {fileID: 21300000, guid: bf3d18740018b3e41a9ab6bd92e46473, type: 3}
+  - {fileID: 21300000, guid: 78a4eca3b8563e042bc70daae566efc6, type: 3}
+  - {fileID: 21300000, guid: a49cc5d1d6796f640918283304164b1b, type: 3}
+  - {fileID: 21300000, guid: c8ac6ca55e7ae2e40b5ea3821222899d, type: 3}
+  - {fileID: 21300000, guid: d742faa3ac9c7354b8c41dc00ec6d1b4, type: 3}
+  - {fileID: 21300000, guid: fe504710bd940134aa736778761e3d53, type: 3}
+  - {fileID: 21300000, guid: 547e6bedb6892424b9ff8ba42fae2405, type: 3}
+  - {fileID: 21300000, guid: 8007b9ee6ba58fa488424f0073ae572d, type: 3}
 --- !u!1 &1137453493
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a85eca84ca49d0b4f8678e3fc0d81e78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78a4eca3b8563e042bc70daae566efc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -536,8 +534,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Fue en la noche cuando estaba hablando con su amigo. La pl\xE1tica, entre
-    chismes y chistes, se centraba en c\xF3mo pod\xEDan cruzar la frontera."
+  m_Text: "Escuchaste alguna vez que, por donde est\xE1s, pasaba el ferrocaril a
+    la que llaman La Bestia, la cual te acercar\xE1 a tu destino."
 --- !u!222 &1339777085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -627,18 +625,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnClickChangeBackground
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 261810382}
         m_MethodName: OnClickChangeBackground
         m_Mode: 1
         m_Arguments:
@@ -667,7 +654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a85eca84ca49d0b4f8678e3fc0d81e78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30c19c29e93a5d345b1b104215edf036, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

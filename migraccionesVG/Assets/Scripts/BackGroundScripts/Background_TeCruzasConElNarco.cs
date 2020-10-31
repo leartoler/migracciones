@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement; 
 
-public class BackGround_Manag : MonoBehaviour
+public class BackGround_TeCruzasConElNarco : MonoBehaviour
 {
     public static int currentSprite = 0;
     public string resourceName = "TeCruzasConElNarco";

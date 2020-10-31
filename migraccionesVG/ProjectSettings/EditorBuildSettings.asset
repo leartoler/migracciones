@@ -12,12 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: a28accc6bb9824f49a1be67d0cab7a19
   - enabled: 1
-    path: Assets/Scenes/HistoriaPollero.unity
+    path: Assets/Scenes/Historias/Historia_Pollero.unity
     guid: f8ec06c67a1eb1549939db60ea93cd34
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/InicioTenosique.unity
-    guid: a40e2d585df0f444c9741d07a29e1fb5
-  - enabled: 1
-    path: Assets/Scenes/MaraTeEncontro.unity
+    path: Assets/Scenes/Historias/Historia_Maras.unity
     guid: 7bf47350630abbb48a630492cc52fc25
   m_configObjects: {}

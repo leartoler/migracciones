@@ -1,19 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.SceneManagement; //6:03
+using UnityEngine.SceneManagement; 
 
-
-
-public class BackGround_ComprasMedicamento : MonoBehaviour
+public class BackGround_Raite : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "ComprasMedicamento";
+    public string resourceName = "TeDanUnAventon";
     public Sprite[] backgrounds;
     
     void Awake()
     {
-        if (resourceName != "") //De donde se toman los nombres para las escenas
+        if (resourceName != "") //De donde se toman los nombres para las escenas. Va vacío
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
@@ -25,55 +23,47 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Tras un largo camino recorrido te encuentras por fin en Saltillo. Repentinamente sientes escalofríos.";
+            txtMy.text = "Estás en las inmediaciones de la Ciudad de México, una gran ciudad de la que has escuchado bastante.";
             currentSprite++;
         }
-
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Comienzas a sentir un malestar en el estómago, y te debilitas más por cada paso que das.";
+            txtMy.text = "Conforme caminas por la carretera pides un aventón.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Conforme caminas, ves algo de forma momentánea, una farmacia tal vez.";
+            txtMy.text = "Y pasan las horas y pocos pasan, y quienes lo hacen, no se detienen.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te acercas, aún con el dolor a cuestas.";
+            txtMy.text = "Pasadas unas horas, una camioneta conducida por una pareja, se detiene. Te hacen una pequeña plática.";
             currentSprite++;
         }
         else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Ves una farmacia con pocos medicamentos y un encargado un poco aburrido";
+            txtMy.text = "Y te invitan a subirte. Con tus cosas en la mano, te subes en la parte trasera de la camioneta.";
             currentSprite++;
         }
         else if (currentSprite == 5)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con paso lento, te acercas a él y le pides algo para el dolor. Lamentablemente no tiene lo que necesitas, por lo que te da sólo algo para el dolor. Apresurado, lo tomas y le pagas con el poco dinero que dispones.";
+            txtMy.text = "La ayuda de la pareja te hace descansar por un momento. Te es agradable el viento en tu rostro.";
             currentSprite++;
         }
         else if (currentSprite == 6)
-        {
-            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con pesadez te alejas con tu medicamento que, aunque te ayudará, no es lo que necesitas. Te espera un largo camino, con dolor y cada vez menos recursos.";
-            currentSprite++;
-        }       
-        else if (currentSprite == 7)
-        {
-            SceneManager.LoadScene("InicioMedicamento");
+        {         
+            SceneManager.LoadScene("Inicio_Raite");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
 

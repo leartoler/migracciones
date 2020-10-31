@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement; //6:03
 
 
 
-public class BackGround_ComprasMedicamento : MonoBehaviour
+public class BackGround_HistoriaPolleroNL : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "ComprasMedicamento";
+    public string resourceName = "PolleroTeHaRobado";
     public Sprite[] backgrounds;
     
     void Awake()
@@ -25,55 +25,69 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Tras un largo camino recorrido te encuentras por fin en Saltillo. Repentinamente sientes escalofríos.";
+            txtMy.text = "Fue en la noche cuando estaba hablando con su amigo. La plática, entre chismes y chistes, se centraba en cómo podían cruzar la frontera.";
             currentSprite++;
         }
-
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
+            Debug.Log("aber si sí");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Comienzas a sentir un malestar en el estómago, y te debilitas más por cada paso que das.";
+            txtMy.text = "Tal vez era por eliluminado lugar o sus caras de preocupación, pero llamaron la atención de una persona que les prometió una fácil solución";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Conforme caminas, ves algo de forma momentánea, una farmacia tal vez.";
+            txtMy.text = "Los llevó a un lugar cerca de donde se encontraban, y les señaló su trailer. La oferta que les propuso parecía tentadora: los cruzaría por México por sólo $2,500.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te acercas, aún con el dolor a cuestas.";
+            txtMy.text = "Te asomaste y viste qye estaba vacío. Pensaste en un primer momento en todas las historias que escuchaste y no tuviste mucha confianza.";
             currentSprite++;
         }
         else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Ves una farmacia con pocos medicamentos y un encargado un poco aburrido";
+            txtMy.text = "Te sentaste a orillas del lugar, y esperaste. Pasó bastante tiempo...";
             currentSprite++;
         }
         else if (currentSprite == 5)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con paso lento, te acercas a él y le pides algo para el dolor. Lamentablemente no tiene lo que necesitas, por lo que te da sólo algo para el dolor. Apresurado, lo tomas y le pagas con el poco dinero que dispones.";
+            txtMy.text = "Y poco a poco comenzó a subir más gente. Arrancó el trailer y viste a tu alrededor; sólo viste rostros cansados.";
             currentSprite++;
         }
         else if (currentSprite == 6)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con pesadez te alejas con tu medicamento que, aunque te ayudará, no es lo que necesitas. Te espera un largo camino, con dolor y cada vez menos recursos.";
+            txtMy.text = "Pasó algo de tiempo y la persona que los llevaba los bajó del lugar.";
             currentSprite++;
-        }       
+        }
         else if (currentSprite == 7)
         {
-            SceneManager.LoadScene("InicioMedicamento");
+            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
+			Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+			txtMy.text = "Y arrancó. Con dudas por la forma apresurada con la que arrancó, no quedó más que caminar por el único lugar que parecía llegar a un rumbo.";
+			      currentSprite++;
+        }
+        else if (currentSprite == 8)
+        {
+            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
+            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            txtMy.text = "Y después de tanto caminar en el desierto, la noche te alcanzó. En eso, ves un letrero que confirmó tu sospecha: el pollero los estafó y nunca cruzó la frontera.";
+            currentSprite++;
+        }
+        else if (currentSprite == 9)
+        {
+            SceneManager.LoadScene("Inicio_PolleroNL");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
 

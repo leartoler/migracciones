@@ -30,19 +30,29 @@ public class GameControl_InicioTenosique : MonoBehaviour
             player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;
 
             if (player1.GetComponent<FollowThePath>().waypointIndex == 
-            player1.GetComponent<FollowThePath>().waypoints.Length - 1) //longitud desde el inicio
+            player1.GetComponent<FollowThePath>().waypoints.Length - 2) //longitud desde el inicio
             {
                 SceneManager.LoadScene("NoPasaElTrenLaBestia");
             }
             if (player1.GetComponent<FollowThePath>().waypointIndex == 
            player1.GetComponent<FollowThePath>().waypoints.Length - 3) //longitud desde el inicio
             {
-                SceneManager.LoadScene("TeAgarróMigración");
+                SceneManager.LoadScene("TeAgarroMigración");
             }
             if (player1.GetComponent<FollowThePath>().waypointIndex == 
            player1.GetComponent<FollowThePath>().waypoints.Length - 4) //longitud desde el inicio
             {
                 SceneManager.LoadScene("TeDanUnAventon");
+            }
+            if (player1.GetComponent<FollowThePath>().waypointIndex == 
+           player1.GetComponent<FollowThePath>().waypoints.Length - 7)
+            {
+                SceneManager.LoadScene("Queretaro");
+            }
+            if (player1.GetComponent<FollowThePath>().waypointIndex == 
+           player1.GetComponent<FollowThePath>().waypoints.Length - 8)
+            {
+                SceneManager.LoadScene("Irapuato");
             }
         }
     }
