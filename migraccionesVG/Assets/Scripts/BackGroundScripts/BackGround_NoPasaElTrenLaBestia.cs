@@ -73,7 +73,7 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
         }       
         else if (currentSprite == 7)
         {
-            SceneManager.LoadScene("InicioTren");
+            SceneManager.LoadScene("Inicio_NoPasaElTrenLaBestia");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
     }

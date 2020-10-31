@@ -87,7 +87,7 @@ public class BackGround_Manager : MonoBehaviour
         }
         else if (currentSprite == 9)
         {
-            SceneManager.LoadScene("InicioTenosique");
+            SceneManager.LoadScene("Inicio_InicioTenosique");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
 

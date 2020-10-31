@@ -56,7 +56,7 @@ public class BackGround_TeCruzasConElNarco : MonoBehaviour
         }
         else if (currentSprite == 5)
         {         
-            SceneManager.LoadScene("Inicio_TeCruzasConElNarcotrafico");
+            SceneManager.LoadScene("Inicio_TeCruzasConElNarco");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
 

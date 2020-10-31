@@ -73,9 +73,8 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
         }       
         else if (currentSprite == 7)
         {
-            SceneManager.LoadScene("InicioMedicamento");
+            SceneManager.LoadScene("Inicio_ComprasMedicamento");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
-
     }
 }

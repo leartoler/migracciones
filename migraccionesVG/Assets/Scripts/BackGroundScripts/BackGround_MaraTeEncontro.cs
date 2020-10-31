@@ -79,7 +79,7 @@ public class BackGround_MaraTeEncontro : MonoBehaviour
         }
         else if (currentSprite == 8)
         {
-            SceneManager.LoadScene("InicioMaras");
+            SceneManager.LoadScene("Inicio_MaraTeEncontro");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
         

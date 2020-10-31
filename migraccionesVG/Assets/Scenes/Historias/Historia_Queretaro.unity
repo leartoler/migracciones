@@ -280,19 +280,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 261810378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04ca316b38ae5874da98f8d3c6f015d3, type: 3}
+  m_Script: {fileID: 11500000, guid: e34b2d084814aaf42871d19c40fc0cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceName: MaraTeEncontro
+  resourceName: NoPasaElTrenLaBestia
   backgrounds:
-  - {fileID: 21300000, guid: f358077b81acbc24890ef8f53c576665, type: 3}
-  - {fileID: 21300000, guid: fc21ee96dcff6294e8b3bb73bdc5a362, type: 3}
-  - {fileID: 21300000, guid: 26faac5010cddc34088fd992ffff2a96, type: 3}
-  - {fileID: 21300000, guid: 94fd4335c3f5b644888cefa304fbbfa6, type: 3}
-  - {fileID: 21300000, guid: aa7b77bc4afa340468c1ea3f28063e18, type: 3}
-  - {fileID: 21300000, guid: f42596131ab7b904092715a024baef49, type: 3}
-  - {fileID: 21300000, guid: 3a2c7bd83c3c8e34fbe6510fed3e31ff, type: 3}
-  - {fileID: 21300000, guid: 43db19fd8e9812148a80585dbe83ec21, type: 3}
+  - {fileID: 21300000, guid: 78a4eca3b8563e042bc70daae566efc6, type: 3}
+  - {fileID: 21300000, guid: a49cc5d1d6796f640918283304164b1b, type: 3}
+  - {fileID: 21300000, guid: c8ac6ca55e7ae2e40b5ea3821222899d, type: 3}
+  - {fileID: 21300000, guid: d742faa3ac9c7354b8c41dc00ec6d1b4, type: 3}
+  - {fileID: 21300000, guid: fe504710bd940134aa736778761e3d53, type: 3}
+  - {fileID: 21300000, guid: 547e6bedb6892424b9ff8ba42fae2405, type: 3}
+  - {fileID: 21300000, guid: 8007b9ee6ba58fa488424f0073ae572d, type: 3}
 --- !u!1 &1137453493
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f358077b81acbc24890ef8f53c576665, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78a4eca3b8563e042bc70daae566efc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -535,8 +534,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Llegaste a una peque\xF1a ciudad en el atardecer. Ves a tu derecha y observas
-    un grafiti que por un momento te hace temer."
+  m_Text: "Escuchaste alguna vez que, por donde est\xE1s, pasaba el ferrocaril a
+    la que llaman La Bestia, la cual te acercar\xE1 a tu destino."
 --- !u!222 &1339777085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -655,7 +654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a85eca84ca49d0b4f8678e3fc0d81e78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30c19c29e93a5d345b1b104215edf036, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
