@@ -72,7 +72,7 @@ public class BackGround_TeHanRobado : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Cerca de la frontera, y con el cuerpo completamente cansado, te anocheció. Buscas, con las pocas fuerzas que te quedan, un lugar dónde descansar.";
+            txtMy.text = "Tienes dos caminos: continuar por Guadalajara o Aguascalientes";
             guadalajaraUI.SetActive (true); 
             aguascalientesUI.SetActive (true);
         }
