@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 692263715}
   - component: {fileID: 692263714}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Guadalajara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 860705439}
   - component: {fileID: 860705438}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Aguascalientes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

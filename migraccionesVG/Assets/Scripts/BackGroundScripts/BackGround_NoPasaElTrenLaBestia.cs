@@ -10,6 +10,14 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "NoPasaElTrenLaBestia";
     public Sprite[] backgrounds;
+    public GameObject apiazcoUI;
+    public GameObject tampicoUI;
+
+    void Start()
+    {
+        apiazcoUI.SetActive(false);
+        tampicoUI.SetActive(false);
+    }
     
     void Awake()
     {
@@ -68,13 +76,28 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te duermes. Para cuando despiertas sabes que, por el momento, no pasará La Bestia. Continuas con tu camino esperando recuperar el tiempo perdido.";
-            currentSprite++;
+            txtMy.text = "Te duermes. Para cuando despiertas sabes que, por el momento, no pasará La Bestia, y no sabes si continuar hacia Tampico o Puebla";
+            tampicoUI.SetActive (true);
+            apiazcoUI.SetActive (true);
         }       
-        else if (currentSprite == 7)
+       
+    }
+      public void OnClickChangeTampico()
+    {        
+            if (currentSprite == 6)        
         {
-            SceneManager.LoadScene("Inicio_NoPasaElTrenLaBestia");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            //guadalajaraUI.SetActive (true); 
+            SceneManager.LoadScene("Inicio_Tampico");
+                       
+        }
+    }
+
+    public void OnClickChangeApiazco()
+    {            
+            if (currentSprite == 6)
+        {
+             
+            SceneManager.LoadScene("Inicio_NoPasaElTrenLaBestia");            
         }
     }
 }
