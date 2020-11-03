@@ -231,7 +231,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 113871996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba483f538396d54cadc75de50481701, type: 3}
+  m_Script: {fileID: 11500000, guid: 5676dbc5d98dac94a8adf79b7d3b4184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -1103,7 +1103,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1540736430}
-  - component: {fileID: 1540736431}
   m_Layer: 0
   m_Name: Waypoint
   m_TagString: Untagged
@@ -1125,20 +1124,6 @@ Transform:
   m_Father: {fileID: 657219787}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1540736431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540736429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5676dbc5d98dac94a8adf79b7d3b4184, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 774242289}
-  timeLeft: 1
 --- !u!1 &1585029312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1149,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585029312}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b200d7acfbb6dca44aba63594a3d1368, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 26158f68cda6f8043b263c74dc3ff245, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 519420031}

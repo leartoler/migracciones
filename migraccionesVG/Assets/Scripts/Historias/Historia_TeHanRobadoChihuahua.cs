@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Historia_Secuestran : MonoBehaviour
+public class Historia_TeHanRobadoChihuahua : MonoBehaviour
 {
 	public GameObject player1;
 	public float timeLeft = 1f;
@@ -21,7 +21,8 @@ public class Historia_Secuestran : MonoBehaviour
     		timeLeft -= Time.deltaTime;
     		if (timeLeft <= 0)
     		{    			
-    			SceneManager.LoadScene("Historia_Secuestran");    			
+    			SceneManager.LoadScene("Historia_TeHanRobadoChihuahua");
+    			
     		}    		
     	}
     }

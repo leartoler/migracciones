@@ -36,7 +36,7 @@ public class Dice : MonoBehaviour
         int randomDiceSide = 0;
         for (int i = 0; i <= 20; i++)
         {
-            randomDiceSide = Random.Range(1, 2); //Originalmente aqui es 0,3. Se pone a 1 para ver cada una de las casillas
+            randomDiceSide = Random.Range(0,3); //Originalmente aqui es 0,3. Se pone a 1 para ver cada una de las casillas
             rend.sprite = diceSides[randomDiceSide];
             yield return new WaitForSeconds(0.05f);
         }

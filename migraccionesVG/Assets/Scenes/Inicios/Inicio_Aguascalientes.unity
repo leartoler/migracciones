@@ -174,7 +174,6 @@ GameObject:
   m_Component:
   - component: {fileID: 113871997}
   - component: {fileID: 113871998}
-  - component: {fileID: 113871999}
   m_Layer: 0
   m_Name: Waypoint (2)
   m_TagString: Pollero
@@ -190,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113871996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.22, y: 4.41, z: 0}
+  m_LocalPosition: {x: -0.86, y: 0.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 657219787}
@@ -222,20 +221,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &113871999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113871996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba483f538396d54cadc75de50481701, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 774242289}
-  timeLeft: 1
 --- !u!1 &197401462
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,78 +381,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &547857990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 547857991}
-  - component: {fileID: 547857992}
-  - component: {fileID: 547857993}
-  m_Layer: 0
-  m_Name: Waypoint (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &547857991
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547857990}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4, y: 2.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 657219787}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &547857992
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547857990}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1}
-  m_EdgeRadius: 0
---- !u!114 &547857993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547857990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7693cfa190a325f48b6c6e35c4d9d819, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 774242289}
-  timeLeft: 1
 --- !u!1 &571792355
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571792355}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.34, y: 3.35, z: 0}
+  m_LocalPosition: {x: -0.43, y: -3.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 657219787}
@@ -535,7 +448,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 571792355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 793acef92ab1fba4a90f700a9bf1a320, type: 3}
+  m_Script: {fileID: 11500000, guid: c47de1fbfbeca6346bca516d65bc6b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -672,7 +585,6 @@ Transform:
   - {fileID: 1246747397}
   - {fileID: 1712953280}
   - {fileID: 571792356}
-  - {fileID: 547857991}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -715,7 +627,6 @@ MonoBehaviour:
   - {fileID: 1246747397}
   - {fileID: 1712953280}
   - {fileID: 571792356}
-  - {fileID: 547857991}
   moveSpeed: 1
   waypointIndex: 0
   moveAllowed: 0
@@ -1126,6 +1037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1246747397}
   - component: {fileID: 1246747398}
+  - component: {fileID: 1246747399}
   m_Layer: 0
   m_Name: Waypoint (3)
   m_TagString: Mara
@@ -1141,7 +1053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246747396}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.52, y: 4.28, z: 0}
+  m_LocalPosition: {x: -0.79, y: -0.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 657219787}
@@ -1173,6 +1085,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!114 &1246747399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246747396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c3d2c7346734947b5ee7ab8adae65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 774242289}
+  timeLeft: 1
 --- !u!1 &1372322243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488171579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7, y: 4.75, z: 0}
+  m_LocalPosition: {x: -0.95, y: 0.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 657219787}
@@ -1308,7 +1234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540736429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.57, y: 4.39, z: 0}
+  m_LocalPosition: {x: -1.15, y: 1.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 657219787}
@@ -1339,7 +1265,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585029312}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b200d7acfbb6dca44aba63594a3d1368, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 26158f68cda6f8043b263c74dc3ff245, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 519420031}
@@ -1387,7 +1313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712953280}
   - component: {fileID: 1712953281}
-  - component: {fileID: 1712953282}
+  - component: {fileID: 1712953283}
   m_Layer: 0
   m_Name: Waypoint (4)
   m_TagString: Mara
@@ -1403,7 +1329,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712953279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8, y: 3.5, z: 0}
+  m_LocalPosition: {x: -0.27, y: -2.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 657219787}
@@ -1435,7 +1361,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &1712953282
+--- !u!114 &1712953283
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1444,7 +1370,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1712953279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6d56a561515ff4699d49b3b8a577ad, type: 3}
+  m_Script: {fileID: 11500000, guid: d863182755bb25644a36aecf963b0857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}

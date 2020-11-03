@@ -280,11 +280,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 261810378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dc92e91a956ed6468c0d03eb573b677, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c29e4321ddb79c4e808825e31669918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceName: TeCruzasConElNarco
-  backgrounds: []
+  resourceName: RoboEnMexicali
+  backgrounds:
+  - {fileID: 21300000, guid: ef226b01d9618e64cbdfbcb4210e595b, type: 3}
+  - {fileID: 21300000, guid: 6a3475cd2557b2b4187b5736f9d4cfe3, type: 3}
+  - {fileID: 21300000, guid: 7debfb1025e6e0c4d8db354ab80152ff, type: 3}
+  - {fileID: 21300000, guid: c612898b91f06d94798c9e44291596ff, type: 3}
+  - {fileID: 21300000, guid: b0b37d9cb692b2f408cf8d713bcfca4f, type: 3}
 --- !u!1 &1137453493
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5fb7ad6b3964d6c488d195e32fd5d460, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef226b01d9618e64cbdfbcb4210e595b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -527,8 +532,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Avanzando hacia tu destino, te encuentras con una cruz en tu camino. No
-    le das mayor imporancia, pero algo en ti te indica que hay un peligro cerca.
+  m_Text: "En el desierto de Chihuahua, y con el cuerpo completamente cansado, te
+    anocheci\xF3. Buscas, con las pocas fuerzas que te quedan, un lugar d\xF3nde
+    descansar."
 --- !u!222 &1339777085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -647,7 +653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5fb7ad6b3964d6c488d195e32fd5d460, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c40173ccbe040124c86e55b75120e319, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

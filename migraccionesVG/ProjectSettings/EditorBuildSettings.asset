@@ -12,44 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicios/Inicio_Main.unity
     guid: a28accc6bb9824f49a1be67d0cab7a19
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Pollero.unity
-    guid: f8ec06c67a1eb1549939db60ea93cd34
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Maras.unity
-    guid: 7bf47350630abbb48a630492cc52fc25
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Albergue.unity
-    guid: 864e60e3c32ea414aaeea2f59c5fdaab
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Asalto.unity
-    guid: c41b3bca685fa664e8449cccd19cff36
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Desierto.unity
-    guid: 33db8ecc053b2ce408c43f1dde6ca260
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Empleo.unity
-    guid: 07f6f64ddb2f7cc40b26a72c3e80cd6f
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_InicioGeneral.unity
-    guid: b2628e3326a9279448df5b85cbc24301
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_InicioTenosique.unity
-    guid: c11403af55a77b4428e958a093a4e3d6
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Intento.unity
-    guid: 98d548d3104a5cc4e85c42f7e4b0a474
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Medicinas.unity
-    guid: dd8a839af95610448b5d8c3343732c76
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Migracion.unity
-    guid: c3a9961d64987d044bab1a68bfe15eee
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
-    guid: ea11ac3ffcd70d847a9dfd56b972374f
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_PolleroNL.unity
-    guid: b19a9bbb6b50c8547b92484b24b7c553
+    path: Assets/Scenes/Inicios/Inicio_Aguascalientes.unity
+    guid: 1f125d016b1502a4a9afe750eb8577e8
   - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_ComprasMedicamento.unity
     guid: 4b79f2d86c2d36445a5dcd54152d1ee6
@@ -63,8 +27,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicios/Inicio_EncuentrasTrabajoTemporal.unity
     guid: 94f818bfdd36b8842b14dcf54d08663e
   - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Guadalajara.unity
+    guid: 7b8b28306d53cbc44aa1c89a07b3679b
+  - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_HistoriaPolleroNL.unity
     guid: 4d0e046c19982fe4c90e1be2170baa3e
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_InicioTenosique.unity
+    guid: c11403af55a77b4428e958a093a4e3d6
   - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_Intento.unity
     guid: 5fc17d1ea0e728b40a0b260b2e35fb20
@@ -79,7 +49,13 @@ EditorBuildSettings:
     guid: f42c5af6bcfa44b428ed91d89020ce2e
   - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_RoboEnMexicali.unity
-    guid: 05cb1d92c3efba6428474fcef24a6451
+    guid: 59b8a8a77a8d0b0409a0d7133ce314c3
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Secuestran.unity
+    guid: 00c2184e138d5e64591e7ba68ba4ade9
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Tampico.unity
+    guid: ebf1b17fc851d3b47ae1e7fd8259c40c
   - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_TeAgarroMigracion_SePiensaQuitar.unity
     guid: 29e3fc0e436eb93448d3a44036e99fa5
@@ -87,12 +63,63 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicios/Inicio_TeCruzasConElNarco_SePiensaQuitar.unity
     guid: 5a236331242dd1f489f571f7acfc6876
   - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Albergue.unity
+    guid: 864e60e3c32ea414aaeea2f59c5fdaab
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Asalto.unity
+    guid: c41b3bca685fa664e8449cccd19cff36
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Desierto.unity
+    guid: 33db8ecc053b2ce408c43f1dde6ca260
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Empleo.unity
+    guid: 07f6f64ddb2f7cc40b26a72c3e80cd6f
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Intento.unity
+    guid: 98d548d3104a5cc4e85c42f7e4b0a474
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Maras.unity
+    guid: 7bf47350630abbb48a630492cc52fc25
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Medicinas.unity
+    guid: dd8a839af95610448b5d8c3343732c76
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Migracion.unity
+    guid: c3a9961d64987d044bab1a68bfe15eee
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_MigracionTenosique.unity
+    guid: f28cce504ac798549bc16e656e07a922
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
+    guid: ea11ac3ffcd70d847a9dfd56b972374f
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_NarcotraficoMazatlan.unity
+    guid: 034b437cdd58f3747a1f36f3e8ff108f
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Pollero.unity
+    guid: f8ec06c67a1eb1549939db60ea93cd34
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_PolleroNL.unity
+    guid: b19a9bbb6b50c8547b92484b24b7c553
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Queretaro.unity
+    guid: 4fe3b6d355dc3f04d9222a8db5305c63
+  - enabled: 1
     path: Assets/Scenes/Historias/Historia_Raite.unity
     guid: 35776e9e4109c914190e75a663ef416b
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Secuestran.unity
     guid: 4f92c808510a67a4b82748d3787669ce
   - enabled: 1
+    path: Assets/Scenes/Historias/Historia_TeHanRobado.unity
+    guid: 294260673bc25ba478e59cf73c0698ad
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_TeHanRobadoChihuahua.unity
+    guid: bfdff1b90aee457499fbdb049654d1bf
+  - enabled: 1
     path: Assets/Scenes/Historias/Historia_TrenBestia.unity
     guid: e3dbe7278e7bf2b41bb960d5c99d63e7
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_TeHanRobadoChihuahua.unity
+    guid: 05cb1d92c3efba6428474fcef24a6451
   m_configObjects: {}
