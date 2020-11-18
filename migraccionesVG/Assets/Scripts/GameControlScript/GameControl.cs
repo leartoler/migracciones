@@ -11,7 +11,10 @@ public class GameControl : MonoBehaviour
     public static int diceSideThrown = 0;
     public static int player1StartWaypoint = 0;
     public static bool gameOver = false;
-    
+    //public AudioSource noise1;
+    //public AudioSource noise2;
+    //public AudioSource[] sounds;
+
     void Start()
     {
        // player1StartWaypoint = 0; //se puso este nuevo
@@ -19,22 +22,21 @@ public class GameControl : MonoBehaviour
         player1 = GameObject.Find("Player1");
         player1.GetComponent<FollowThePath>().moveAllowed = false;  
         player1StartWaypoint = 0;
-        Debug.Log("Esta madre deberia ser 0");             
+        //AudioSource[] sounds = GetComponents<AudioSource>();
+        //noise1 = sounds[0];
+        //noise2 = sounds[1];
     }
        
     void Update()
     {
-
+        //noise1.Play();
+        //noise2.Play();
         if (player1.GetComponent<FollowThePath>().waypointIndex >
             player1StartWaypoint + diceSideThrown)
-
         {
             player1.GetComponent<FollowThePath>().moveAllowed = false;            
-            player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;   //aqui va 1, que es donde se detiene pero da 1 porque es de esas madres que tiene menos 1
-                   
-        }
-
-        
+            player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;   //aqui va 1, que es donde se detiene pero da 1 porque es de esas madres que tiene menos 1                   
+        }        
     }
 
     public static void MovePlayer(int playerToMove)
@@ -45,16 +47,6 @@ public class GameControl : MonoBehaviour
                 player1.GetComponent<FollowThePath>().moveAllowed = true;
                 break;
         }
-    }
-
-    void reset()
-    {
-        
-        
-        Debug.Log("Esta madre deberia resetearse");
-    }
-
-
-
+    }   
     }
 

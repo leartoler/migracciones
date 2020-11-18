@@ -12,9 +12,11 @@ public class FollowThePath : MonoBehaviour
     public int waypointIndex = 0; // el actual waypoint que está ocupando el jugador
 
     public bool moveAllowed = false;
+    public AudioSource noise1;
+    public AudioSource[] sounds;
 
     // Use this for initialization
-    
+
 
     private void Start()
     {
@@ -23,6 +25,8 @@ public class FollowThePath : MonoBehaviour
         //Debug.Log("Esta Madre no jala");
         transform.position = waypoints[waypointIndex].transform.position; //Se cami a tres en waypoin index
         waypointIndex = 0;
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
 
 
 
@@ -48,7 +52,7 @@ public class FollowThePath : MonoBehaviour
             if (transform.position == waypoints[waypointIndex].transform.position) //lo que hace esta madre es contar las madres rojas
             {
                 waypointIndex += 1;
-                 Debug.Log("Sera Aqui???????????????"); 
+                noise1.Play();
             }
         }
     }
