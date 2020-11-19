@@ -23,7 +23,6 @@ public class BackGround_TeAgarroMigracionTenosique : MonoBehaviour
         AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
         noise1 = sounds[0]; 
         noise2 = sounds[1]; 
-
     }
 
     public void OnClickChangeBackground()
@@ -34,7 +33,8 @@ public class BackGround_TeAgarroMigracionTenosique : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Continuas con tu camino, con el sol dándote en el rostro y a un lado de las vías del tren, sientes una tranquilidad inusitada.";
-            noise1.Play();            
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
         else if (currentSprite == 1)

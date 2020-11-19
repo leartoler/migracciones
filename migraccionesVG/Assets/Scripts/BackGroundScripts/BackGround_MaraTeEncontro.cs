@@ -10,13 +10,22 @@ public class BackGround_MaraTeEncontro : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "MaraTeEncontro";
     public Sprite[] backgrounds;
-    
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
+
     void Awake()
     {
         if (resourceName != "")
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
+    }
 
     public void OnClickChangeBackground()
     {
@@ -26,6 +35,8 @@ public class BackGround_MaraTeEncontro : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Llegaste a una pequeña ciudad en el atardecer. Ves a tu derecha y observas un grafiti que por un momento te hace temer.";
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
         else if (currentSprite == 1)

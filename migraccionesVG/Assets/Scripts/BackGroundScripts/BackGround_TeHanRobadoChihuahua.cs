@@ -10,7 +10,7 @@ public class BackGround_TeHanRobadoChihuahua : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "TeHanRobado";
     public Sprite[] backgrounds;
-     public AudioSource noise1;
+    public AudioSource noise1;
     public AudioSource noise2;
     public AudioSource[] sounds;
     

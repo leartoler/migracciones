@@ -12,23 +12,25 @@ public class BackGround_TeHanRobado : MonoBehaviour
     public Sprite[] backgrounds;
     public GameObject guadalajaraUI;
     public GameObject aguascalientesUI;
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
 
     void Start()
     {
        guadalajaraUI.SetActive (false); 
        aguascalientesUI.SetActive (false);
-    }
-    
-
-
+       AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+       noise1 = sounds[0];
+       noise2 = sounds[1];
+    } 
 
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
-
-
+    
     public void OnClickChangeBackground()
     {
 
@@ -37,9 +39,10 @@ public class BackGround_TeHanRobado : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Cerca de la frontera, y con el cuerpo completamente cansado, te anocheció. Buscas, con las pocas fuerzas que te quedan, un lugar dónde descansar.";
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
-
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
@@ -81,10 +84,8 @@ public class BackGround_TeHanRobado : MonoBehaviour
     public void OnClickChangeGuadalajara()
     {        
             if (currentSprite == 5)        
-        {
-            //guadalajaraUI.SetActive (true); 
-            SceneManager.LoadScene("Inicio_Guadalajara");
-                       
+        {       
+            SceneManager.LoadScene("Inicio_Guadalajara");                       
         }
     }
 
@@ -98,45 +99,3 @@ public class BackGround_TeHanRobado : MonoBehaviour
     }
 }
 
-
-
-
-
-        /*
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        else if (currentSprite == 5)
-        {
-            GameObject.Find("Guadalajara").GetComponent<Image>().sprite = backgrounds[currentSprite];
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Ahora te quedan dos caminos, seguir por Aguascalientes o Guadalajara";
-            SceneManager.LoadScene("Inicio_Guadalajara");
-        } 
-        else if (currentSprite == 5)
-        {
-            GameObject.Find("Aguascalientes").GetComponent<Image>().sprite = backgrounds[currentSprite];
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Ahora te quedan dos caminos, seguir por Aguascalientes o Guadalajara";
-            SceneManager.LoadScene("Inicio_Aguascalientes");
-        }
-
-
-
-           // SceneManager.LoadScene("Inicio_RoboEnMexicali");
-            //Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-        }
-    }
-    */

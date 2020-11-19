@@ -12,11 +12,16 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
     public Sprite[] backgrounds;
     public GameObject apiazcoUI;
     public GameObject tampicoUI;
+    public AudioSource noise1;
+    public AudioSource noise2;
 
     void Start()
     {
         apiazcoUI.SetActive(false);
         tampicoUI.SetActive(false);
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
     }
     
     void Awake()
@@ -24,7 +29,6 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
-
 
     public void OnClickChangeBackground()
     {
@@ -34,6 +38,8 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Escuchaste alguna vez que, por donde estás, pasaba el ferrocaril a la que llaman La Bestia, la cual te acercará a tu destino.";
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
         else if (currentSprite == 1)
@@ -87,8 +93,7 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
             if (currentSprite == 6)        
         {
             //guadalajaraUI.SetActive (true); 
-            SceneManager.LoadScene("Inicio_Tampico");
-                       
+            SceneManager.LoadScene("Inicio_Tampico");                       
         }
     }
 

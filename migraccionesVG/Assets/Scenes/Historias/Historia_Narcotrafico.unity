@@ -285,11 +285,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceName: TeCruzasConElNarco
   backgrounds:
-  - {fileID: 21300000, guid: 5fb7ad6b3964d6c488d195e32fd5d460, type: 3}
-  - {fileID: 21300000, guid: 97b64b1fc52df6648824821b4edea0d6, type: 3}
-  - {fileID: 21300000, guid: 95efcc071e21cf14c875e3d4881b1d97, type: 3}
-  - {fileID: 21300000, guid: 3ce30dfa539d9764f9b760d1fdba7577, type: 3}
-  - {fileID: 21300000, guid: 7e4c23967a7875c4d8aff17675c5d7e6, type: 3}
+  - {fileID: 21300000, guid: 60b9e179f4e194e4895f7d6822a80e1a, type: 3}
+  - {fileID: 21300000, guid: 542c565799dd01b4b9491c6e58ae6c24, type: 3}
+  - {fileID: 21300000, guid: 1e618a9234694c94b8995628508db21d, type: 3}
+  - {fileID: 21300000, guid: 0a10ad6fdca45124c9b2510d99fca6bc, type: 3}
+  - {fileID: 21300000, guid: 8ccc631a98037374c83622c4857f103c, type: 3}
+  noise1: {fileID: 0}
+  noise2: {fileID: 0}
+  sounds: []
 --- !u!1 &1137453493
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +344,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1600, y: 900}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -419,7 +422,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1782484440}
   m_Father: {fileID: 1137453497}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -446,7 +450,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5fb7ad6b3964d6c488d195e32fd5d460, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfbce5c14bbe0f14cbb48ec191114a1a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -498,8 +502,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.74, y: -155.8}
-  m_SizeDelta: {x: 730.68, y: 121.99}
+  m_AnchoredPosition: {x: -5, y: -300}
+  m_SizeDelta: {x: 1500, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1339777084
 MonoBehaviour:
@@ -514,26 +518,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 72a7d943a9f1851429817be2ee69a6a2, type: 3}
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 1
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Avanzando hacia tu destino, te encuentras con una cruz en tu camino. No
-    le das mayor imporancia, pero algo en ti te indica que hay un peligro cerca.
+  m_Text: 
 --- !u!222 &1339777085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -541,6 +544,79 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339777082}
+  m_CullTransparentMesh: 0
+--- !u!1 &1782484439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1782484440}
+  - component: {fileID: 1782484442}
+  - component: {fileID: 1782484441}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1782484440
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782484439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153416886}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -4.69, y: -300.09973}
+  m_SizeDelta: {x: -99.84, y: -690.33}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1782484441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782484439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5654815, g: 0.6509434, b: 0.13817197, a: 0.5019608}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1782484442
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782484439}
   m_CullTransparentMesh: 0
 --- !u!1 &1953372688
 GameObject:
@@ -577,8 +653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4, y: -0.025024}
-  m_SizeDelta: {x: 941.3, y: 599.05}
+  m_AnchoredPosition: {x: -0.015091, y: 0.00035095}
+  m_SizeDelta: {x: 1600, y: 900.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1953372690
 MonoBehaviour:

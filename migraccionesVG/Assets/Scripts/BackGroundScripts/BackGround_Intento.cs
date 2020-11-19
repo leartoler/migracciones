@@ -10,13 +10,22 @@ public class BackGround_Intento : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "Intento";
     public Sprite[] backgrounds;
-    
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
+
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
+    }
 
     public void OnClickChangeBackground()
     {
@@ -26,6 +35,8 @@ public class BackGround_Intento : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Has llegado a la frontera y lo que ves, después del río, son unos enormer barrotes que parecen alzarse hasta el cielo";
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
 
@@ -40,7 +51,7 @@ public class BackGround_Intento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Miras ahora por la derecha e igualmente, la frontera parece extenderse más allá de lo que alcanzar a percibir.";
+            txtMy.text = "Miras ahora por la derecha e igualmente, la frontera parece extenderse más allá de lo que alcanzas a percibir.";
             currentSprite++;
         }
         else if (currentSprite == 3)
@@ -52,8 +63,7 @@ public class BackGround_Intento : MonoBehaviour
         }        
         else if (currentSprite == 5)
         {
-            SceneManager.LoadScene("Inicio_Intento");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            SceneManager.LoadScene("Inicio_Intento");            
         }
 
     }

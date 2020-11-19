@@ -10,11 +10,21 @@ public class BackGround_Secuestran : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "TeHanSecuestrado";
     public Sprite[] backgrounds;
-    
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
+
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
+    }
+
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
     }
 
 
@@ -26,6 +36,8 @@ public class BackGround_Secuestran : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Durante tu camino, te encuentras en una zona desierta, sin nada que ver salvo el horizonte.";
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
 

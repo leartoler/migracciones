@@ -10,13 +10,22 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "PolleroTeHaRobado";
     public Sprite[] backgrounds;
-    
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
+
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
+    }
 
     public void OnClickChangeBackground()
     {
@@ -26,6 +35,8 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Fue en la noche cuando estaba hablando con su amigo. La plática, entre chismes y chistes, se centraba en cómo podían cruzar la frontera.";
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
         else if (currentSprite == 1)
@@ -33,7 +44,7 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Debug.Log("aber si sí");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Tal vez era por eliluminado lugar o sus caras de preocupación, pero llamaron la atención de una persona que les prometió una fácil solución";
+            txtMy.text = "Tal vez era por el iluminado lugar o sus caras de preocupación, pero llamaron la atención de una persona que les prometió una fácil solución.";
             currentSprite++;
         }
         else if (currentSprite == 2)
@@ -47,7 +58,7 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te asomaste y viste qye estaba vacío. Pensaste en un primer momento en todas las historias que escuchaste y no tuviste mucha confianza.";
+            txtMy.text = "Te asomaste y viste que estaba vacío. Pensaste en un primer momento en todas las historias que escuchaste y no tuviste mucha confianza.";
             currentSprite++;
         }
         else if (currentSprite == 4)
@@ -75,7 +86,7 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
 			Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-			txtMy.text = "Y arrancó. Con dudas por la forma apresurada con la que arrancó, no quedó más que caminar por el único lugar que parecía llegar a un rumbo.";
+			txtMy.text = "Y se fue. Con dudas por la forma apresurada con la que arrancó, no quedó más que caminar por el único lugar que parecía llegar a un rumbo.";
 			      currentSprite++;
         }
         else if (currentSprite == 8)

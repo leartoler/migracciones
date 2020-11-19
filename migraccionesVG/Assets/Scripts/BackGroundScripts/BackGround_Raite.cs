@@ -8,13 +8,22 @@ public class BackGround_Raite : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "TeDanUnAventon";
     public Sprite[] backgrounds;
-    
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
+
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas. Va vacío
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
+    }
 
     public void OnClickChangeBackground()
     {
@@ -24,6 +33,8 @@ public class BackGround_Raite : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Estás en las inmediaciones de la Ciudad de México, una gran ciudad de la que has escuchado bastante.";
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
         else if (currentSprite == 1)
@@ -63,8 +74,7 @@ public class BackGround_Raite : MonoBehaviour
         }
         else if (currentSprite == 6)
         {         
-            SceneManager.LoadScene("Inicio_Raite");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            SceneManager.LoadScene("Inicio_Raite");            
         }
 
     }

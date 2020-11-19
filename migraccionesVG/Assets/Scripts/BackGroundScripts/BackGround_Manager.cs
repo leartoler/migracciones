@@ -10,11 +10,21 @@ public class BackGround_Manager : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "HistoriaPollero";
     public Sprite[] backgrounds;
-    
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
+
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
+    }
+
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
     }
 
 
@@ -26,6 +36,8 @@ public class BackGround_Manager : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Fue en la noche cuando estaba hablando con su amigo. La plática, entre chismes y chistes, se centraba en cómo podían cruzar la frontera.";
+            noise1.Play();
+            noise2.Play();
             currentSprite++;
         }
         else if (currentSprite == 1)
@@ -87,8 +99,7 @@ public class BackGround_Manager : MonoBehaviour
         }
         else if (currentSprite == 9)
         {
-            SceneManager.LoadScene("Inicio_InicioTenosique");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            SceneManager.LoadScene("Inicio_InicioTenosique");            
         }
 
     }
