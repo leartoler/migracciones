@@ -8,6 +8,9 @@ public class BackGround_TeAgarroMigracionTenosique : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "TeAgarroMigracion";
     public Sprite[] backgrounds;
+    public AudioSource noise1; //Musica   
+    public AudioSource noise2; //Fondo
+    public AudioSource[] sounds;
     
     void Awake()
     {
@@ -15,6 +18,13 @@ public class BackGround_TeAgarroMigracionTenosique : MonoBehaviour
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
+     private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0]; 
+        noise2 = sounds[1]; 
+
+    }
 
     public void OnClickChangeBackground()
     {
@@ -23,7 +33,8 @@ public class BackGround_TeAgarroMigracionTenosique : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Continuando en tu camino, con el sol dándote en el rostro y a un lado de las vías del tren, sientes una tranquilidad inusitada.";
+            txtMy.text = "Continuas con tu camino, con el sol dándote en el rostro y a un lado de las vías del tren, sientes una tranquilidad inusitada.";
+            noise1.Play();            
             currentSprite++;
         }
         else if (currentSprite == 1)
@@ -37,7 +48,7 @@ public class BackGround_TeAgarroMigracionTenosique : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Al final, te emboscan y sientes que no hay nada que hacer.. el oficial sale y sin resitirte, te subes a la camioneta que arruinará todo tu avance hacia tu destino.";
+            txtMy.text = "Al final, te emboscan y sientes que no hay nada que hacer. El oficial sale y sin resitirte, te subes a la camioneta que arruinará todo tu avance hacia tu destino.";
             currentSprite++;
         }
         else if (currentSprite == 3)
@@ -50,7 +61,7 @@ public class BackGround_TeAgarroMigracionTenosique : MonoBehaviour
         else if (currentSprite == 4)
         {         
             SceneManager.LoadScene("Inicio_InicioTenosique");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            //Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
 
     }

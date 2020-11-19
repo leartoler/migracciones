@@ -8,13 +8,23 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_TeHanRobadoChihuahua : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "RoboEnMexicali";
+    public string resourceName = "TeHanRobado";
     public Sprite[] backgrounds;
+     public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
     
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
+    }
+
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
     }
 
 
@@ -25,7 +35,9 @@ public class BackGround_TeHanRobadoChihuahua : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "En el desierto de Chihuahua, y con el cuerpo completamente cansado, te anocheció. Buscas, con las pocas fuerzas que te quedan, un lugar dónde descansar.";
+            txtMy.text = "En el desierto de y con el cuerpo completamente cansado, te anocheció. Buscas, con las pocas fuerzas que te quedan, un lugar dónde descansar.";
+            noise1.Play();  
+            noise2.Play(); 
             currentSprite++;
         }
 
@@ -33,14 +45,14 @@ public class BackGround_TeHanRobadoChihuahua : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Encuentras un lugar para descansar, pero la soledad del lugar no te la confianza necesaria.";
+            txtMy.text = "Encuentras un lugar para descansar, pero la soledad del lugar no te da la confianza necesaria.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Al final el cansanció ten ganó.Te acuestas y dejas tu mochila a un lado.";
+            txtMy.text = "Al final el cansanció te ganó. Te acuestas y dejas tu mochila a un lado.";
             currentSprite++;
         }
         else if (currentSprite == 3)
@@ -54,13 +66,12 @@ public class BackGround_TeHanRobadoChihuahua : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Al levantarte, miras a tu alrededor: tus cosas han desaparecido. Con la tristeza e impotencia no te queda más que resignarte, levantarte y continuar con tu trayecto.";
+            txtMy.text = "Al levantarte, miras a tu alrededor: tus cosas han desaparecido. Con la tristeza e impotencia no te queda mas que resignarte, levantarte y continuar con tu trayecto.";
             currentSprite++;
         } 
         else if (currentSprite == 5)
         {
-            SceneManager.LoadScene("Inicio_TeHanRobadoChihuahua");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            SceneManager.LoadScene("Inicio_TeHanRobadoChihuahua");            
         }
     }
 }

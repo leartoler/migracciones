@@ -10,11 +10,21 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "ComprasMedicamento";
     public Sprite[] backgrounds;
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
     
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
+    }
+
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
     }
 
 
@@ -26,6 +36,8 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Tras un largo camino recorrido te encuentras por fin en Saltillo. Repentinamente sientes escalofríos.";
+            noise1.Play();  
+            noise2.Play(); 
             currentSprite++;
         }
 
@@ -33,7 +45,7 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Comienzas a sentir un malestar en el estómago, y te debilitas más por cada paso que das.";
+            txtMy.text = "Comienzas a sentir un malestar en el estómago y te debilitas más por cada paso que das.";
             currentSprite++;
         }
         else if (currentSprite == 2)
@@ -54,7 +66,7 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Ves una farmacia con pocos medicamentos y un encargado un poco aburrido";
+            txtMy.text = "Observas una farmacia con pocos medicamentos y un encargado un poco interesado en su trabajo";
             currentSprite++;
         }
         else if (currentSprite == 5)
@@ -73,8 +85,7 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
         }       
         else if (currentSprite == 7)
         {
-            SceneManager.LoadScene("Inicio_ComprasMedicamento");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            SceneManager.LoadScene("Inicio_ComprasMedicamento");            
         }
     }
 }

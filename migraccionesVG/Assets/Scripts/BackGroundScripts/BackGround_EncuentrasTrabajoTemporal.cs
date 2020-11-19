@@ -8,11 +8,21 @@ public class BackGround_EncuentrasTrabajoTemporal : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "BackGround_EncuentrasTrabajoTemporal";
     public Sprite[] backgrounds;
+    public AudioSource noise1;
+    public AudioSource noise2;
+    public AudioSource[] sounds;
     
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
+    }
+
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
     }
 
     public void OnClickChangeBackground()
@@ -23,6 +33,8 @@ public class BackGround_EncuentrasTrabajoTemporal : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Has recorrido un largo camino, y no te queda tampoco muchos recursos.";
+            noise1.Play();  
+            noise2.Play(); 
             currentSprite++;
         }
 

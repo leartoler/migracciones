@@ -37,8 +37,8 @@ public class BackGround_TeAgarroMigracion : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "Continuas con tu camino. Con el sol dándote en el rostro y a un lado de las vías del tren, sientes una tranquilidad inusitada.";
-            noise1.Play();
-            noise2.Play();
+            noise1.Play();  
+            noise2.Play();          
             currentSprite++;
         }
         else if (currentSprite == 1)
@@ -60,7 +60,7 @@ public class BackGround_TeAgarroMigracion : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "De regreso a Tenosique, caes en la cuenta de que tendrás que repetir toda tu travesía.";
+            txtMy.text = "De regreso a tu país, caes en la cuenta de que tendrás que repetir toda tu travesía.";
             currentSprite++;
         }       
         else if (currentSprite == 4)
@@ -68,6 +68,5 @@ public class BackGround_TeAgarroMigracion : MonoBehaviour
             SceneManager.LoadScene("Inicio_Main");
             //Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
         }
-
     }
 }
