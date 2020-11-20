@@ -65,9 +65,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Albergue.unity
     guid: 864e60e3c32ea414aaeea2f59c5fdaab
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Asalto.unity
-    guid: c41b3bca685fa664e8449cccd19cff36
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Desierto.unity
     guid: 33db8ecc053b2ce408c43f1dde6ca260
@@ -92,15 +92,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
     guid: ea11ac3ffcd70d847a9dfd56b972374f
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_NarcotraficoMazatlan.unity
-    guid: 034b437cdd58f3747a1f36f3e8ff108f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Pollero.unity
     guid: f8ec06c67a1eb1549939db60ea93cd34
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_PolleroNL.unity
-    guid: b19a9bbb6b50c8547b92484b24b7c553
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Queretaro.unity
     guid: 4fe3b6d355dc3f04d9222a8db5305c63

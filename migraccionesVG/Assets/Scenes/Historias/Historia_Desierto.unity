@@ -311,7 +311,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.294
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -407,7 +407,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.766
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -732,7 +732,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "!Ya no puedes m\xE1s! Descansas en el desierto.\n\nClick para continuar."
 --- !u!222 &1339777085
 CanvasRenderer:
   m_ObjectHideFlags: 0

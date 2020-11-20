@@ -43,7 +43,7 @@ public class BackGround_MaraTeEncontro : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Pero ves a mucha gente a tu alrededor, por lo qu te sientes seguro.";
+            txtMy.text = "Pero ves a mucha gente a tu alrededor, por lo que te sientes seguro.";
             currentSprite++;
         }
         else if (currentSprite == 2)
