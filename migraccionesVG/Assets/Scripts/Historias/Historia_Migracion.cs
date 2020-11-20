@@ -21,8 +21,7 @@ public class Historia_Migracion : MonoBehaviour
     		timeLeft -= Time.deltaTime;
     		if (timeLeft <= 0)
     		{    			
-    			SceneManager.LoadScene("Historia_Migracion");
-    			
+    			SceneManager.LoadScene("Historia_Migracion");    			
     		}    		
     	}
     }

@@ -454,7 +454,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceName: TeAgarroMigracion
-  backgrounds: []
+  backgrounds:
+  - {fileID: 21300000, guid: f45c6cc33df06ee4d8fd6ce2c04be4ec, type: 3}
+  - {fileID: 21300000, guid: eac60782084d6fe43917d88d408f6d09, type: 3}
+  - {fileID: 21300000, guid: a86b9ec3449d0604694e8ffcf8fd4e0a, type: 3}
+  - {fileID: 21300000, guid: 334aa5edc3d7a6d46b55c47459c09746, type: 3}
   noise1: {fileID: 261810384}
   noise2: {fileID: 261810382}
   sounds: []

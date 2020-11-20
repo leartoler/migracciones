@@ -7,8 +7,7 @@ public class Historia_TrenBestia : MonoBehaviour
 {
 	public GameObject player1;
 	public float timeLeft = 1f;
-	private bool isTiming = false; 
-    
+	private bool isTiming = false;     
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,10 +20,8 @@ public class Historia_TrenBestia : MonoBehaviour
     	{
     		timeLeft -= Time.deltaTime;
     		if (timeLeft <= 0)
-    		{    			
-    			
+    		{  	    			
                 SceneManager.LoadScene("Historia_TrenBestia"); //Originalmente aquí está "HIstoria_TrenBestia"
-    			
     		}    		
     	}
     }

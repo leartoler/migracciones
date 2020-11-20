@@ -82,7 +82,7 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te duermes. Para cuando despiertas sabes que, por el momento, no pasará La Bestia, y no sabes si continuar hacia Tampico o Puebla";
+            txtMy.text = "Te duermes. Para cuando despiertas sabes que, por el momento, no pasará La Bestia, y no sabes si continuar hacia Puebla o Tampico";
             tampicoUI.SetActive (true);
             apiazcoUI.SetActive (true);
         }       

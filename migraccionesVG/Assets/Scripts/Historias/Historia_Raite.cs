@@ -21,8 +21,7 @@ public class Historia_Raite : MonoBehaviour
     		timeLeft -= Time.deltaTime;
     		if (timeLeft <= 0)
     		{    			
-    			SceneManager.LoadScene("Historia_Raite");
-    			
+    			SceneManager.LoadScene("Historia_Raite");    			
     		}    		
     	}
     }

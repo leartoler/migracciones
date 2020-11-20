@@ -73,7 +73,7 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con paso lento, te acercas a él y le pides algo para el dolor. Lamentablemente no tiene lo que necesitas, por lo que te da sólo algo para el dolor. Apresurado, lo tomas y le pagas con el poco dinero que dispones.";
+            txtMy.text = "Con paso lento, te acercas a él y pides algo para tu enfermedad. Lamentablemente, sólo tiene algo para el dolor. Apresurado, lo tomas y le pagas con el poco dinero que dispones.";
             currentSprite++;
         }
         else if (currentSprite == 6)

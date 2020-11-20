@@ -21,7 +21,7 @@ public class Historia_Asalto : MonoBehaviour
     		timeLeft -= Time.deltaTime;
     		if (timeLeft <= 0)
     		{    			
-    			SceneManager.LoadScene("Historia_Asalto");
+    			SceneManager.LoadScene("Historia_TeHanRobado");
     			
     		}    		
     	}

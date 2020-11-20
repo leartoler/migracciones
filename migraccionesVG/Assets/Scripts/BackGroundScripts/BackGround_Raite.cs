@@ -32,7 +32,7 @@ public class BackGround_Raite : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Estás en las inmediaciones de la Ciudad de México, una gran ciudad de la que has escuchado bastante.";
+            txtMy.text = "Estás en las inmediaciones de Puebla, una gran ciudad de la que has escuchado bastante.";
             noise1.Play();
             noise2.Play();
             currentSprite++;

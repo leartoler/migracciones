@@ -61,7 +61,7 @@ public class BackGround_Intento : MonoBehaviour
             txtMy.text = "Observas de nuevo aquellos barrotes y, después de tanto pensar, no te queda más que buscar otra ruta, una más accesible. Continuas con tu viaje, ahora hacia Tijuana.";
             currentSprite++;
         }        
-        else if (currentSprite == 5)
+        else if (currentSprite == 4)
         {
             SceneManager.LoadScene("Inicio_Intento");            
         }

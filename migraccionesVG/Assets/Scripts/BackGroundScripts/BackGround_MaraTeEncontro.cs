@@ -78,21 +78,13 @@ public class BackGround_MaraTeEncontro : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te golpearon al final de la calle y te quitaron todas tus pertenencias.";
+            txtMy.text = "Te golpearon y, al final, fue tanto el dolor de los golpes que no pudiste levantarte. Continuarás contu viaje al día siguiente.";
             currentSprite++;
         }
         else if (currentSprite == 7)
         {
-            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
-			Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-			txtMy.text = "Al final del día, fue tanto el dolor de los golpes que no pudiste levantarte en todo el día. Continuarás con tu viaje el día siguiente. ";
-			      currentSprite++;
-        }
-        else if (currentSprite == 8)
-        {
             SceneManager.LoadScene("Inicio_MaraTeEncontro");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-        }
+        }      
         
 
     }
