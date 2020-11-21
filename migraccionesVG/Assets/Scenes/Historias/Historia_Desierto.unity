@@ -294,8 +294,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5efa5cbb60a990242a0bb859c5a74870, type: 3}
   - {fileID: 21300000, guid: 89d84104d33242b4d9958c3f3bc03452, type: 3}
   - {fileID: 21300000, guid: e62ace779fd249744b91fd3df30253a0, type: 3}
-  noise1: {fileID: 0}
-  noise2: {fileID: 0}
+  noise1: {fileID: 261810384}
+  noise2: {fileID: 261810383}
   sounds: []
 --- !u!82 &261810383
 AudioSource:

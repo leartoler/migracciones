@@ -81,7 +81,7 @@ public class BackGround_Desierto : MonoBehaviour
         }  
         else if (currentSprite == 7)
         {         
-            SceneManager.LoadScene("Inicio_Desierto");            
+            SceneManager.LoadScene("Inicio_TeHanRobadoChihuahua");            
         }
 
     }

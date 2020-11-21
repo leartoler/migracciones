@@ -9,65 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8d84e538b33973d448972db68da71427
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Main.unity
-    guid: a28accc6bb9824f49a1be67d0cab7a19
+    path: Assets/Scenes/Infografia.unity
+    guid: c1a36384c4cb810429cddecfa720ce7d
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Aguascalientes.unity
-    guid: 1f125d016b1502a4a9afe750eb8577e8
+    path: Assets/Scenes/Informacion_Raul.unity
+    guid: 8ab21792b044f2145b255656674c175c
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_ComprasMedicamento.unity
-    guid: 4b79f2d86c2d36445a5dcd54152d1ee6
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Desierto.unity
-    guid: 382ee2ccea66a1748ac7aa9d863d03c9
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_EncontrasteUnAlbergue.unity
-    guid: 0c442af2c8af0ec4aa25fe8100469b81
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_EncuentrasTrabajoTemporal.unity
-    guid: 94f818bfdd36b8842b14dcf54d08663e
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Guadalajara.unity
-    guid: 7b8b28306d53cbc44aa1c89a07b3679b
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_HistoriaPolleroNL.unity
-    guid: 4d0e046c19982fe4c90e1be2170baa3e
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_InicioTenosique.unity
-    guid: c11403af55a77b4428e958a093a4e3d6
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Intento.unity
-    guid: 5fc17d1ea0e728b40a0b260b2e35fb20
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_MaraTeEncontro.unity
-    guid: 772e829cf9e56684bbf21e9fe758cb43
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_NoPasaElTrenLaBestia.unity
-    guid: 32ac09d34fe32ac4a8224066e7eda883
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Raite.unity
-    guid: f42c5af6bcfa44b428ed91d89020ce2e
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_RoboEnMexicali.unity
-    guid: 59b8a8a77a8d0b0409a0d7133ce314c3
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Secuestran.unity
-    guid: 00c2184e138d5e64591e7ba68ba4ade9
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Tampico.unity
-    guid: ebf1b17fc851d3b47ae1e7fd8259c40c
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_TeAgarroMigracion_SePiensaQuitar.unity
-    guid: 29e3fc0e436eb93448d3a44036e99fa5
-  - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_TeCruzasConElNarco_SePiensaQuitar.unity
-    guid: 5a236331242dd1f489f571f7acfc6876
+    path: Assets/Scenes/Seleccion_de_Personajes.unity
+    guid: 2d7fa277cf2fb044eab15f0d218df489
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Albergue.unity
     guid: 864e60e3c32ea414aaeea2f59c5fdaab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Desierto.unity
     guid: 33db8ecc053b2ce408c43f1dde6ca260
@@ -92,15 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
     guid: ea11ac3ffcd70d847a9dfd56b972374f
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Pollero.unity
     guid: f8ec06c67a1eb1549939db60ea93cd34
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Queretaro.unity
     guid: 4fe3b6d355dc3f04d9222a8db5305c63
@@ -120,6 +66,66 @@ EditorBuildSettings:
     path: Assets/Scenes/Historias/Historia_TrenBestia.unity
     guid: e3dbe7278e7bf2b41bb960d5c99d63e7
   - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Aguascalientes.unity
+    guid: 1f125d016b1502a4a9afe750eb8577e8
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_ComprasMedicamento.unity
+    guid: 4b79f2d86c2d36445a5dcd54152d1ee6
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_EncontrasteUnAlbergue.unity
+    guid: 0c442af2c8af0ec4aa25fe8100469b81
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_EncuentrasTrabajoTemporal.unity
+    guid: 94f818bfdd36b8842b14dcf54d08663e
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Guadalajara.unity
+    guid: 7b8b28306d53cbc44aa1c89a07b3679b
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_InicioTenosique.unity
+    guid: c11403af55a77b4428e958a093a4e3d6
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Intento.unity
+    guid: 5fc17d1ea0e728b40a0b260b2e35fb20
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Irapuato.unity
+    guid: 6af901dddc2d1eb449df34b234b7f78b
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Main.unity
+    guid: a28accc6bb9824f49a1be67d0cab7a19
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_MaraTeEncontro.unity
+    guid: 772e829cf9e56684bbf21e9fe758cb43
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_NoPasaElTrenLaBestia.unity
+    guid: 32ac09d34fe32ac4a8224066e7eda883
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Raite.unity
+    guid: f42c5af6bcfa44b428ed91d89020ce2e
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_SanLuisPotosi.unity
+    guid: 91259cf65e1c0da4dab46cdc3d2cee59
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Secuestran.unity
+    guid: 00c2184e138d5e64591e7ba68ba4ade9
+  - enabled: 1
+    path: Assets/Scenes/Inicios/Inicio_Tampico.unity
+    guid: ebf1b17fc851d3b47ae1e7fd8259c40c
+  - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_TeHanRobadoChihuahua.unity
     guid: 05cb1d92c3efba6428474fcef24a6451
+  - enabled: 1
+    path: Assets/Scenes/Finales/Final_Amarillo.unity
+    guid: 407ac222c04d158449c8fd8c0fbcafaf
+  - enabled: 1
+    path: Assets/Scenes/Finales/Final_Morado.unity
+    guid: 3308376e994f72b42b0d74c7cc4c7e3b
+  - enabled: 1
+    path: Assets/Scenes/Finales/Final_Rojo.unity
+    guid: 0f2006783982b164d816c9ee3d671837
+  - enabled: 1
+    path: Assets/Scenes/Finales/Final_Verde.unity
+    guid: 94e9bff313ffabe43b7d8c53fdf2e07a
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 44a574dcfac4a1941b30ac7f2818fa63
   m_configObjects: {}

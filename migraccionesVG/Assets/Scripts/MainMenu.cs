@@ -21,13 +21,33 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Inicio_Main");
     }
 
     public void QuitGame()
     {
         Debug.Log("Se quita");
         Application.Quit();
+    }
+
+    public void Infografia()
+    {
+        SceneManager.LoadScene("Infografia");
+    }
+
+    public void Informacion()
+    {
+        SceneManager.LoadScene("Informacion_Raul");
+    }
+    
+    public void MainMenuScene()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Seleccion()
+    {
+        SceneManager.LoadScene("Seleccion_de_Personajes");
     }
 }
 
