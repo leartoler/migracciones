@@ -54,7 +54,7 @@ public class BackGround_TeHanRobado : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Al final el cansanció ten ganó.Te acuestas y dejas tu mochila a un lado.";
+            txtMy.text = "Al final, el cansanció ten ganó.Te acuestas y dejas tu mochila a un lado.";
             currentSprite++;
         }
         else if (currentSprite == 3)

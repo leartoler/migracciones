@@ -18,22 +18,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Seleccion_de_Personajes.unity
     guid: 2d7fa277cf2fb044eab15f0d218df489
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Albergue.unity
+    path: Assets/Scenes/Historias/Historia_Albergue1.unity
     guid: 864e60e3c32ea414aaeea2f59c5fdaab
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Desierto.unity
     guid: 33db8ecc053b2ce408c43f1dde6ca260
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Empleo.unity
+    path: Assets/Scenes/Historias/Historia_Empleo1.unity
     guid: 07f6f64ddb2f7cc40b26a72c3e80cd6f
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Intento.unity
     guid: 98d548d3104a5cc4e85c42f7e4b0a474
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Maras.unity
+  - enabled: 0
+    path: Assets/Scenes/Historias/Historia_Maras1.unity
     guid: 7bf47350630abbb48a630492cc52fc25
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Medicinas.unity
+    path: Assets/Scenes/Historias/Historia_Medicinas1.unity
     guid: dd8a839af95610448b5d8c3343732c76
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Migracion.unity
@@ -45,23 +45,29 @@ EditorBuildSettings:
     path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
     guid: ea11ac3ffcd70d847a9dfd56b972374f
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Pollero.unity
+    path: Assets/Scenes/Historias/Historia_Pollero1.unity
     guid: f8ec06c67a1eb1549939db60ea93cd34
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Queretaro.unity
     guid: 4fe3b6d355dc3f04d9222a8db5305c63
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Raite.unity
+    path: Assets/Scenes/Historias/Historia_Raite1.unity
     guid: 35776e9e4109c914190e75a663ef416b
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Secuestran.unity
     guid: 4f92c808510a67a4b82748d3787669ce
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Pollero.unity
+    guid: 6816b895f135e05489196c353e6373c3
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_TeHanRobado.unity
     guid: 294260673bc25ba478e59cf73c0698ad
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_TeHanRobadoChihuahua.unity
     guid: bfdff1b90aee457499fbdb049654d1bf
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Maras.unity
+    guid: 331b82eed2eb29045b196304936ebff2
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_TrenBestia.unity
     guid: e3dbe7278e7bf2b41bb960d5c99d63e7

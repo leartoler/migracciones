@@ -32,7 +32,7 @@ public class BackGround_EncuentrasTrabajoTemporal : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Has recorrido un largo camino, y no te queda tampoco muchos recursos.";
+            txtMy.text = "Has recorrido un largo camino, y no te quedan tampoco muchos recursos.";
             noise1.Play();  
             noise2.Play(); 
             currentSprite++;
@@ -42,7 +42,7 @@ public class BackGround_EncuentrasTrabajoTemporal : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Después de continuar caminado, ves a lo lejos una pequeña casa. La necesidad te hace ir y pedir un poco de ayuda.";
+            txtMy.text = "Después de estar caminando, ves a lo lejos una pequeña casa. La necesidad te hace ir y pedir un poco de ayuda.";
             currentSprite++;
         }
         else if (currentSprite == 2)

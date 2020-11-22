@@ -34,7 +34,7 @@ public class BackGround_Intento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Has llegado a la frontera y lo que ves, después del río, son unos enormer barrotes que parecen alzarse hasta el cielo";
+            txtMy.text = "Has llegado a la frontera y lo que ves, después del río, son unos enormes barrotes que parecen alzarse hasta el cielo";
             noise1.Play();
             noise2.Play();
             currentSprite++;
@@ -58,7 +58,7 @@ public class BackGround_Intento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Observas de nuevo aquellos barrotes y, después de tanto pensar, no te queda más que buscar otra ruta, una más accesible. Continuas con tu viaje, ahora hacia Tijuana.";
+            txtMy.text = "Observas de nuevo aquellos barrotes y, después de tanto pensar, no te queda mas que buscar otra ruta, una más accesible. Continuas con tu viaje, ahora hacia Tijuana.";
             currentSprite++;
         }        
         else if (currentSprite == 4)

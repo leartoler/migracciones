@@ -38,7 +38,7 @@ public class BackGround_Queretaro : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te encuentras en Querétero, y un gran campo se te presenta. Tienes dos opciones: seguir por Irapuato o ir al norte por San Luis Potosi.";
+            txtMy.text = "Te encuentras en Querétaro, y un gran campo se te presenta. Tienes dos opciones: seguir por Irapuato o ir al norte por San Luis Potosi.";
             noise1.Play();
             noise2.Play();
             SanLuisPotosiUI.SetActive(true);

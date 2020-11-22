@@ -86,7 +86,7 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
 			Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-			txtMy.text = "Y se fue. Con dudas por la forma apresurada con la que arrancó, no quedó más que caminar por el único lugar que parecía llegar a un rumbo.";
+			txtMy.text = "Y se fue. Con dudas por la forma apresurada con la que arrancó, no quedó mas que caminar por el único lugar que parecía llegar a un rumbo.";
 			      currentSprite++;
         }
         else if (currentSprite == 8)

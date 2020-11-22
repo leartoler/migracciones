@@ -78,7 +78,7 @@ public class BackGround_MaraTeEncontro : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te golpearon y, al final, fue tanto el dolor de los golpes que no pudiste levantarte. Continuarás contu viaje al día siguiente.";
+            txtMy.text = "Te golpearon y, al final, fue tanto el dolor de los golpes que no pudiste levantarte. Continuarás con tu viaje al día siguiente.";
             currentSprite++;
         }
         else if (currentSprite == 7)

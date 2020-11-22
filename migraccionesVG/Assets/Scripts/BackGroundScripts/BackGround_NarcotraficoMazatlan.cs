@@ -31,7 +31,7 @@ public class BackGround_NarcotraficoMazatlan : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Avanzando hacia tu destino, te encuentras con una cruz en tu camino. No le das mayor imporancia, pero algo en ti te indica que hay un peligro cerca.";
+            txtMy.text = "Avanzando hacia tu destino, te encuentras con una cruz en tu camino. No le das mayor importancia, pero algo en ti te indica que hay un peligro cerca.";
             noise1.Play();
             noise2.Play();
             currentSprite++;
@@ -40,14 +40,14 @@ public class BackGround_NarcotraficoMazatlan : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "De repente te cruzas con dos personas de aspecto intimidante, que comienzan a hacerte preguntas, una tras otra.";
+            txtMy.text = "De repente te cruzas con dos personas, de aspecto intimidante, que comienzan a hacerte preguntas, una tras otra.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Eran miembros de un grupo del narcotráfico local, de modales intimidantes pero de aspecto similar a cualquiera que hayas visto. Su cara lo delataba: no era la primera vez que hacía esto.";
+            txtMy.text = "Son miembros de un grupo local del narcotráfico, de modales intimidantes pero de aspecto similar a cualquiera que hayas visto. Su cara lo delataba: no era la primera vez que hacían esto.";
             currentSprite++;
         }
         else if (currentSprite == 3)

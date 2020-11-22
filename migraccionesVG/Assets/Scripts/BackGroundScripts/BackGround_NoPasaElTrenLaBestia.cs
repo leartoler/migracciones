@@ -54,7 +54,7 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Después de tanto caminar, te encuentras con las vías que parecen ser de La Bestia. La tomas como guía y te diriges hacia donde te lleve.";
+            txtMy.text = "Después de tanto caminar, te encuentras con las vías que parecen ser de La Bestia. Las tomas como guía y te diriges hacia donde te lleven.";
             currentSprite++;
         }
         else if (currentSprite == 3)
