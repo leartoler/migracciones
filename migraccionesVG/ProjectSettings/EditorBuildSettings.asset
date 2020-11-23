@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8d84e538b33973d448972db68da71427
   - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 44a574dcfac4a1941b30ac7f2818fa63
+  - enabled: 1
     path: Assets/Scenes/Infografia.unity
     guid: c1a36384c4cb810429cddecfa720ce7d
   - enabled: 1
@@ -17,60 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Seleccion_de_Personajes.unity
     guid: 2d7fa277cf2fb044eab15f0d218df489
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Albergue1.unity
-    guid: 864e60e3c32ea414aaeea2f59c5fdaab
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Desierto.unity
-    guid: 33db8ecc053b2ce408c43f1dde6ca260
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Empleo1.unity
-    guid: 07f6f64ddb2f7cc40b26a72c3e80cd6f
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Intento.unity
-    guid: 98d548d3104a5cc4e85c42f7e4b0a474
-  - enabled: 0
-    path: Assets/Scenes/Historias/Historia_Maras1.unity
-    guid: 7bf47350630abbb48a630492cc52fc25
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Medicinas1.unity
-    guid: dd8a839af95610448b5d8c3343732c76
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Migracion.unity
-    guid: c3a9961d64987d044bab1a68bfe15eee
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_MigracionTenosique.unity
-    guid: f28cce504ac798549bc16e656e07a922
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
-    guid: ea11ac3ffcd70d847a9dfd56b972374f
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Pollero1.unity
-    guid: f8ec06c67a1eb1549939db60ea93cd34
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Queretaro.unity
-    guid: 4fe3b6d355dc3f04d9222a8db5305c63
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Raite1.unity
-    guid: 35776e9e4109c914190e75a663ef416b
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Secuestran.unity
-    guid: 4f92c808510a67a4b82748d3787669ce
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Pollero.unity
-    guid: 6816b895f135e05489196c353e6373c3
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_TeHanRobado.unity
-    guid: 294260673bc25ba478e59cf73c0698ad
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_TeHanRobadoChihuahua.unity
-    guid: bfdff1b90aee457499fbdb049654d1bf
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Maras.unity
-    guid: 331b82eed2eb29045b196304936ebff2
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_TrenBestia.unity
-    guid: e3dbe7278e7bf2b41bb960d5c99d63e7
   - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_Aguascalientes.unity
     guid: 1f125d016b1502a4a9afe750eb8577e8
@@ -111,6 +60,66 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicios/Inicio_SanLuisPotosi.unity
     guid: 91259cf65e1c0da4dab46cdc3d2cee59
   - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Albergue.unity
+    guid: 8bcf090d40ab65642a6e9ee27b4da45f
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Desierto.unity
+    guid: 33db8ecc053b2ce408c43f1dde6ca260
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Empleo.unity
+    guid: 07f6f64ddb2f7cc40b26a72c3e80cd6f
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Intento.unity
+    guid: 36b3379e8278a554aa936c7f7997b913
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Maras.unity
+    guid: 331b82eed2eb29045b196304936ebff2
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Medicinas.unity
+    guid: 6163e31c8d8a1c540b4b98637ebec9ad
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Migracion.unity
+    guid: c3a9961d64987d044bab1a68bfe15eee
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_MigracionTenosique.unity
+    guid: f28cce504ac798549bc16e656e07a922
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
+    guid: ea11ac3ffcd70d847a9dfd56b972374f
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Pollero.unity
+    guid: 6816b895f135e05489196c353e6373c3
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Queretaro.unity
+    guid: f7cc1b452995fe540813700d546bca17
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Raite.unity
+    guid: 887d448eda084ce4cb8b2f11ec16d950
+  - enabled: 1
+    path: Assets/Scenes/Finales/Final_Amarillo.unity
+    guid: 3732379fb42f8df4489b74cf7b820d68
+  - enabled: 1
+    path: Assets/Scenes/Finales/Final_Morado.unity
+    guid: 5629c7af302fec748bf95e9fca8d215e
+  - enabled: 1
+    path: Assets/Scenes/Finales/Final_Rojo.unity
+    guid: 76a894d1fec43ba4bb54c472c05f2a39
+  - enabled: 1
+    path: Assets/Scenes/Finales/Final_Verde.unity
+    guid: b1601ebf8e09925448ed6496bf72eec5
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Secuestran.unity
+    guid: 236180e93f6936243a1201a83d74da7e
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_TeHanRobado.unity
+    guid: 294260673bc25ba478e59cf73c0698ad
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_TeHanRobadoChihuahua.unity
+    guid: bfdff1b90aee457499fbdb049654d1bf
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_TrenBestia.unity
+    guid: 1f7255d32918b0642a5a106447ab98f3
+  - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_Secuestran.unity
     guid: 00c2184e138d5e64591e7ba68ba4ade9
   - enabled: 1
@@ -119,19 +128,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_TeHanRobadoChihuahua.unity
     guid: 05cb1d92c3efba6428474fcef24a6451
-  - enabled: 1
-    path: Assets/Scenes/Finales/Final_Amarillo.unity
-    guid: 407ac222c04d158449c8fd8c0fbcafaf
-  - enabled: 1
-    path: Assets/Scenes/Finales/Final_Morado.unity
-    guid: 3308376e994f72b42b0d74c7cc4c7e3b
-  - enabled: 1
-    path: Assets/Scenes/Finales/Final_Rojo.unity
-    guid: 0f2006783982b164d816c9ee3d671837
-  - enabled: 1
-    path: Assets/Scenes/Finales/Final_Verde.unity
-    guid: 94e9bff313ffabe43b7d8c53fdf2e07a
-  - enabled: 1
-    path: Assets/Scenes/Creditos.unity
-    guid: 44a574dcfac4a1941b30ac7f2818fa63
   m_configObjects: {}
