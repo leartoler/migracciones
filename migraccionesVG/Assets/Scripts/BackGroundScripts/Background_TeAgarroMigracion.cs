@@ -66,7 +66,7 @@ public class BackGround_TeAgarroMigracion : MonoBehaviour
         else if (currentSprite == 4)
         {         
             SceneManager.LoadScene("Inicio_Main");
-            //Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            currentSprite = 0;
         }
     }
 }

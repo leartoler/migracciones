@@ -8,7 +8,7 @@ public class BackGround_FinalVerde : MonoBehaviour
     public static int currentSprite = 0;
     public string resourceName = "Final_Verde";
     public Sprite[] backgrounds;    
-    public GameObject Amarillo;
+    public GameObject Verde;
     public AudioSource noise1;
     public AudioSource[] sounds;
 
@@ -21,7 +21,7 @@ public class BackGround_FinalVerde : MonoBehaviour
 
     private void Start()
     {
-        Amarillo.SetActive(true);
+        Verde.SetActive(true);
         AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
         noise1 = sounds[0];
     }
@@ -42,12 +42,13 @@ public class BackGround_FinalVerde : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "";
-            Amarillo.SetActive(false);
+            Verde.SetActive(false);
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             SceneManager.LoadScene("Creditos");
+            currentSprite = 0;
         }
 
     }

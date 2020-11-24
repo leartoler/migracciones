@@ -315,7 +315,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1998035510}
-        m_MethodName: MainMenuScene
+        m_MethodName: Repetir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -936,7 +936,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Gracias a la colaboraci\xF3n de:\nDr. Guillermo Castillo Ramirez\nMtro.
-    J. Jonathan Ibarra Coronel\n\nY al apoyo de la Universidad Nacional AUt\xF3noma
+    J. Jonathan Ibarra Coronel\n\nY al apoyo de la Universidad Nacional Aut\xF3noma
     de M\xE9xico\n\nY a ustedes por jugar."
 --- !u!222 &1917409656
 CanvasRenderer:

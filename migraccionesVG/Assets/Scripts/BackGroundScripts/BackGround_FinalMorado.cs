@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class BackGround_FinalMorado : MonoBehaviour
 {
     public static int currentSprite = 0;
     public string resourceName = "Final_Morado";
     public Sprite[] backgrounds;
-    public GameObject Amarillo;
+    public GameObject Morado;
     public AudioSource noise1;
     public AudioSource[] sounds;
 
@@ -21,7 +21,8 @@ public class BackGround_FinalMorado : MonoBehaviour
 
     private void Start()
     {
-        Amarillo.SetActive(true);
+        Morado.SetActive(true);
+        Debug.Log("Se queda en true");
         AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
         noise1 = sounds[0];
     }
@@ -33,7 +34,7 @@ public class BackGround_FinalMorado : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "La migración centroamericana hacia el norte del continente ha sido constante durante los últimos 30 años. Se calcula que existen más de 4 milloes de centroamericanos residiendo en Norte América: 57,976 en México; 172,020 en Canáda, y 3,998,280 en Estados Unidos.";
+            txtMy.text = "La migración centroamericana hacia el norte del continente ha sido constante durante los últimos 30 años. Se calcula que existen más de 4 millones de centroamericanos residiendo en Norte América: 57,976 en México; 172,020 en Canada, y 3,998,280 en Estados Unidos.";
             currentSprite++;
             noise1.Play();
         }
@@ -42,12 +43,16 @@ public class BackGround_FinalMorado : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "";
-            Amarillo.SetActive(false);
+            Morado.SetActive(false);
+            Debug.Log("Se queda en false");
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
+            Morado.SetActive(true);
             SceneManager.LoadScene("Creditos");
+            Debug.Log("Se queda en true");
+            currentSprite = 0;
         }
 
     }

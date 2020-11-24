@@ -74,7 +74,8 @@ public class BackGround_Raite : MonoBehaviour
         }
         else if (currentSprite == 6)
         {         
-            SceneManager.LoadScene("Inicio_Raite");            
+            SceneManager.LoadScene("Inicio_Raite");
+            currentSprite = 0;
         }
 
     }

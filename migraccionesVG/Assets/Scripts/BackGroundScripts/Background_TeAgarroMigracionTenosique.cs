@@ -61,7 +61,7 @@ public class BackGround_TeAgarroMigracionTenosique : MonoBehaviour
         else if (currentSprite == 4)
         {         
             SceneManager.LoadScene("Inicio_InicioTenosique");
-            //Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            currentSprite = 0;
         }
 
     }

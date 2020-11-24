@@ -85,7 +85,8 @@ public class BackGround_TeHanRobado : MonoBehaviour
     {        
             if (currentSprite == 5)        
         {       
-            SceneManager.LoadScene("Inicio_Guadalajara");                       
+            SceneManager.LoadScene("Inicio_Guadalajara");
+            currentSprite = 0;
         }
     }
 
@@ -94,7 +95,8 @@ public class BackGround_TeHanRobado : MonoBehaviour
             if (currentSprite == 5)
         {
              
-            SceneManager.LoadScene("Inicio_Aguascalientes");            
+            SceneManager.LoadScene("Inicio_Aguascalientes");
+            currentSprite = 0;
         }
     }
 }

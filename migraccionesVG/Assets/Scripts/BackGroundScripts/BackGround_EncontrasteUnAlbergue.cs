@@ -71,7 +71,7 @@ public class BackGround_EncontrasteUnAlbergue : MonoBehaviour
         else if (currentSprite == 5)
         {
             SceneManager.LoadScene("Inicio_EncontrasteUnAlbergue");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            currentSprite = 0;
         }
     }
 }

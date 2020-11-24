@@ -51,7 +51,8 @@ public class BackGround_Queretaro : MonoBehaviour
             {
                 //guadalajaraUI.SetActive (true); 
                 SceneManager.LoadScene("Inicio_SanLuisPotosi");
-            }
+            currentSprite = 0;
+        }
         }
 
         public void OnClickChangeIrapuato()
@@ -60,6 +61,7 @@ public class BackGround_Queretaro : MonoBehaviour
             {
 
                 SceneManager.LoadScene("Inicio_Irapuato");
-            }
+            currentSprite = 0;
+        }
         }
     }

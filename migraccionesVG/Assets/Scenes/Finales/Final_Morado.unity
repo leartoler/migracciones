@@ -449,14 +449,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 261810378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8e4f6865b4dd94cba4029b711b4244, type: 3}
+  m_Script: {fileID: 11500000, guid: 95bed28cb3828234ba43d23d529346a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   resourceName: Final_Morado
   backgrounds:
-  - {fileID: 21300000, guid: b9aa3eb1b4da0d441b7346ad9b3be469, type: 3}
-  - {fileID: 21300000, guid: af4b2e97ca116ef468fbaa5145fef92c, type: 3}
-  Amarillo: {fileID: 1795502044}
+  - {fileID: 21300000, guid: 4442f6122ecb3c34d9f75437c81461a7, type: 3}
+  - {fileID: 21300000, guid: 2979817b78eb500429a693e371530f1a, type: 3}
+  Morado: {fileID: 1795502044}
   noise1: {fileID: 261810382}
   sounds: []
 --- !u!1 &1137453493

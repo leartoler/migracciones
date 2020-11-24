@@ -84,6 +84,7 @@ public class BackGround_MaraTeEncontro : MonoBehaviour
         else if (currentSprite == 7)
         {
             SceneManager.LoadScene("Inicio_MaraTeEncontro");
+            currentSprite = 0;
         }      
         
 

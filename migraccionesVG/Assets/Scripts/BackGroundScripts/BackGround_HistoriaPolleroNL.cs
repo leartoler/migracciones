@@ -99,7 +99,7 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
         else if (currentSprite == 9)
         {
             SceneManager.LoadScene("Inicio_HistoriaPolleroNL");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            currentSprite = 0;
         }
 
     }

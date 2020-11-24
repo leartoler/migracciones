@@ -22,6 +22,7 @@ public class BackGround_FinalAmarillo : MonoBehaviour
     private void Start()
     {
         Amarillo.SetActive(true);
+        Debug.Log("Se queda en true");
         AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
         noise1 = sounds[0];        
     }
@@ -43,11 +44,15 @@ public class BackGround_FinalAmarillo : MonoBehaviour
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
             txtMy.text = "";
             Amarillo.SetActive(false);
+            Debug.Log("Se queda en false");
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
+            Amarillo.SetActive(true);
             SceneManager.LoadScene("Creditos");
+            Debug.Log("Se queda en true");
+            currentSprite = 0;
         }  
 
     }

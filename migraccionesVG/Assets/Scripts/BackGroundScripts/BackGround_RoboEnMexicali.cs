@@ -72,7 +72,7 @@ public class BackGround_RoboEnMexicali : MonoBehaviour
         else if (currentSprite == 5)
         {
             SceneManager.LoadScene("Inicio_RoboEnMexicali");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            currentSprite = 0;
         }
     }
 }

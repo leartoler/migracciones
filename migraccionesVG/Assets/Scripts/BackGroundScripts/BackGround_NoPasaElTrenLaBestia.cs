@@ -85,6 +85,7 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
             txtMy.text = "Te duermes. Para cuando despiertas sabes que, por el momento, no pasará La Bestia, y no sabes si continuar hacia Puebla o Tampico";
             tampicoUI.SetActive (true);
             apiazcoUI.SetActive (true);
+            
         }       
        
     }
@@ -93,7 +94,8 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
             if (currentSprite == 6)        
         {
             //guadalajaraUI.SetActive (true); 
-            SceneManager.LoadScene("Inicio_Tampico");                       
+            SceneManager.LoadScene("Inicio_Tampico");
+            currentSprite = 0;
         }
     }
 
@@ -102,7 +104,8 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
             if (currentSprite == 6)
         {
              
-            SceneManager.LoadScene("Inicio_NoPasaElTrenLaBestia");            
+            SceneManager.LoadScene("Inicio_NoPasaElTrenLaBestia");
+            currentSprite = 0;
         }
     }
 }

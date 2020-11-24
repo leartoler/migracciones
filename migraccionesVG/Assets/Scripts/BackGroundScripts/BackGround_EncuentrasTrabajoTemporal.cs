@@ -62,7 +62,7 @@ public class BackGround_EncuentrasTrabajoTemporal : MonoBehaviour
         else if (currentSprite == 4)
         {            
             SceneManager.LoadScene("Inicio_EncuentrasTrabajoTemporal");
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            currentSprite = 0;
         }
     }
 }

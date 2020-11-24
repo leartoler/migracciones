@@ -49,6 +49,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Seleccion_de_Personajes");
     }
+    public void Repetir()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
 
    

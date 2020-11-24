@@ -63,7 +63,8 @@ public class BackGround_Intento : MonoBehaviour
         }        
         else if (currentSprite == 4)
         {
-            SceneManager.LoadScene("Inicio_Intento");            
+            SceneManager.LoadScene("Inicio_Intento");
+            currentSprite = 0;
         }
 
     }

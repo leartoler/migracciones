@@ -85,7 +85,8 @@ public class BackGround_ComprasMedicamento : MonoBehaviour
         }       
         else if (currentSprite == 7)
         {
-            SceneManager.LoadScene("Inicio_ComprasMedicamento");            
+            SceneManager.LoadScene("Inicio_ComprasMedicamento");
+            currentSprite = 0;
         }
     }
 }

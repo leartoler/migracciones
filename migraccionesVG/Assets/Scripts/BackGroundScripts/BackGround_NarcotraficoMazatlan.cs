@@ -66,7 +66,8 @@ public class BackGround_NarcotraficoMazatlan : MonoBehaviour
         }
         else if (currentSprite == 5)
         {         
-            SceneManager.LoadScene("Inicio_Aguascalientes");            
+            SceneManager.LoadScene("Inicio_Aguascalientes");
+            currentSprite = 0;
         }
 
     }

@@ -65,8 +65,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Desierto.unity
     guid: 33db8ecc053b2ce408c43f1dde6ca260
-  - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Empleo.unity
+  - enabled: 0
+    path: Assets/Scenes/Historias/Historia_Empleo1.unity
     guid: 07f6f64ddb2f7cc40b26a72c3e80cd6f
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Intento.unity
@@ -86,6 +86,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
     guid: ea11ac3ffcd70d847a9dfd56b972374f
+  - enabled: 1
+    path: Assets/Scenes/Historias/Historia_Empleo.unity
+    guid: edf90a8ac5148f943be4fa0d3363796c
   - enabled: 1
     path: Assets/Scenes/Historias/Historia_Pollero.unity
     guid: 6816b895f135e05489196c353e6373c3

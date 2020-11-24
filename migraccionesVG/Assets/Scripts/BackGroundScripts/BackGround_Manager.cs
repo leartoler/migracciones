@@ -99,7 +99,8 @@ public class BackGround_Manager : MonoBehaviour
         }
         else if (currentSprite == 9)
         {
-            SceneManager.LoadScene("Inicio_InicioTenosique");            
+            SceneManager.LoadScene("Inicio_InicioTenosique");
+            currentSprite = 0;
         }
 
     }
