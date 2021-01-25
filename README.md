@@ -1,6 +1,7 @@
 # Migracciones
 
 <img src = "migraccionesVG/Assets/Assets/Icon.PNG" width=600>
+<body>
 <body style = "background-color:rgb(255,87,46);">
   
 
