@@ -1,9 +1,7 @@
-<html>
 # Migracciones
 
 <img src = "migraccionesVG/Assets/Assets/Icon.PNG" width=600>
-<body>
-<body bgcolor = **#2432BE**>
+
   
 
 A serious game about the migration across Mexico. 
@@ -17,6 +15,5 @@ Articles about design process
 You can download version .8 in: https://leartoler.itch.io/migracciones </p>
 Game Design Document: https://github.com/leartoler/migracciones/blob/main/Migracciones.pdf
 
-</body>
-</html>
+
 
