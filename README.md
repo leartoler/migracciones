@@ -10,7 +10,7 @@ Articles about design process
 - https://learto-ler.medium.com/designing-migracciones-second-part-the-characters-1476e386fa48
 - https://learto-ler.medium.com/designing-migracciones-third-part-posmortem-58f5704ae83c
 
-You can download version .8 in: https://leartoler.itch.io/migracciones
+You can download version .8 in: https://leartoler.itch.io/migracciones. 
 Game Design Document: https://github.com/leartoler/migracciones/blob/main/Migracciones.pdf
 
 
