@@ -1,7 +1,7 @@
 # Migracciones
 
 <img src = "migraccionesVG/Assets/Assets/Icon.PNG" width=600>
-<body style = "background-color:pink;">
+<body style = "background-color:rgb(255,87,46);">
   </body>
 
 A serious game about the migration across Mexico. 
