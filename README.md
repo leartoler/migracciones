@@ -1,4 +1,7 @@
-# migracciones
+# Migracciones
+
+![alt text] (https://img.itch.zone/aW1nLzQ2NTM2MTMucG5n/347x500/s%2BaI9f.png)
+
 A serious game about the migration across Mexico. 
 In resume, is a tabletop game in video, with a focus in the narrative part.
 
