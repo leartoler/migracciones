@@ -1,6 +1,6 @@
 # Migracciones
 
-<img src = "migraccionesVG/Assets/Assets/Icon.PNG" width=400>
+<img src = "migraccionesVG/Assets/Assets/Icon.PNG" width=800>
 
 A serious game about the migration across Mexico. 
 In resume, is a tabletop game in video, with a focus in the narrative part.
