@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Menus/MainMenuEsp.unity
     guid: 8d84e538b33973d448972db68da71427
   - enabled: 1
-    path: Assets/Scenes/Creditos.unity
+    path: Assets/Scenes/Menus/Creditos.unity
     guid: 44a574dcfac4a1941b30ac7f2818fa63
   - enabled: 1
-    path: Assets/Scenes/Infografia.unity
+    path: Assets/Scenes/Menus/Infografia.unity
     guid: c1a36384c4cb810429cddecfa720ce7d
   - enabled: 1
-    path: Assets/Scenes/Informacion_Raul.unity
+    path: Assets/Scenes/Menus/Informacion_Raul.unity
     guid: 8ab21792b044f2145b255656674c175c
   - enabled: 1
-    path: Assets/Scenes/Seleccion_de_Personajes.unity
+    path: Assets/Scenes/Menus/Seleccion_de_Personajes.unity
     guid: 2d7fa277cf2fb044eab15f0d218df489
   - enabled: 1
     path: Assets/Scenes/Inicios/Inicio_Aguascalientes.unity
