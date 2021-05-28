@@ -21,9 +21,13 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Inicio_Main");
+        SceneManager.LoadScene("Inicio_MainIng");
     }
 
+   public void JugarJuego()
+   {
+   		SceneManager.LoadScene("Inicio_MainEsp");
+   }
     public void QuitGame()
     {
         Debug.Log("Se quita");

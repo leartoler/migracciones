@@ -18,85 +18,85 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/Informacion_Raul.unity
     guid: 8ab21792b044f2145b255656674c175c
   - enabled: 1
-    path: Assets/Scenes/Menus/Seleccion_de_Personajes.unity
+    path: Assets/Scenes/Menus/Seleccion_de_Personajes_Esp.unity
     guid: 2d7fa277cf2fb044eab15f0d218df489
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Aguascalientes.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_Aguascalientes_Esp.unity
     guid: 1f125d016b1502a4a9afe750eb8577e8
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_ComprasMedicamento.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_ComprasMedicamento_Esp.unity
     guid: 4b79f2d86c2d36445a5dcd54152d1ee6
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_EncontrasteUnAlbergue.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_EncontrasteUnAlbergue_Esp.unity
     guid: 0c442af2c8af0ec4aa25fe8100469b81
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_EncuentrasTrabajoTemporal.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_EncuentrasTrabajoTemporal_Esp.unity
     guid: 94f818bfdd36b8842b14dcf54d08663e
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Guadalajara.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_Guadalajara_Esp.unity
     guid: 7b8b28306d53cbc44aa1c89a07b3679b
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_InicioTenosique.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_InicioTenosique_Esp.unity
     guid: c11403af55a77b4428e958a093a4e3d6
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Intento.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_Intento_Esp.unity
     guid: 5fc17d1ea0e728b40a0b260b2e35fb20
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Irapuato.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_Irapuato_Esp.unity
     guid: 6af901dddc2d1eb449df34b234b7f78b
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Main.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_Main_Esp.unity
     guid: a28accc6bb9824f49a1be67d0cab7a19
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_MaraTeEncontro.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_MaraTeEncontro_Esp.unity
     guid: 772e829cf9e56684bbf21e9fe758cb43
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_NoPasaElTrenLaBestia.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_NoPasaElTrenLaBestia_Esp.unity
     guid: 32ac09d34fe32ac4a8224066e7eda883
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Raite.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_Raite_Esp.unity
     guid: f42c5af6bcfa44b428ed91d89020ce2e
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_SanLuisPotosi.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_SanLuisPotosi_Esp.unity
     guid: 91259cf65e1c0da4dab46cdc3d2cee59
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Albergue.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Albergue_Esp.unity
     guid: 8bcf090d40ab65642a6e9ee27b4da45f
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Desierto.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Desierto_Esp.unity
     guid: 33db8ecc053b2ce408c43f1dde6ca260
   - enabled: 0
     path: Assets/Scenes/Historias/Historia_Empleo1.unity
     guid: 07f6f64ddb2f7cc40b26a72c3e80cd6f
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Intento.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Intento_Esp.unity
     guid: 36b3379e8278a554aa936c7f7997b913
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Maras.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Maras_Esp.unity
     guid: 331b82eed2eb29045b196304936ebff2
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Medicinas.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Medicinas_Esp.unity
     guid: 6163e31c8d8a1c540b4b98637ebec9ad
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Migracion.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Migracion_Esp.unity
     guid: c3a9961d64987d044bab1a68bfe15eee
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_MigracionTenosique.unity
+    path: Assets/Scenes/Historias/Esp/Historia_MigracionTenosique_Esp.unity
     guid: f28cce504ac798549bc16e656e07a922
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Narcotrafico.unity
+    path: Assets/Scenes/Historias/Eng/Historia_Narcotrafico_Eng.unity
     guid: ea11ac3ffcd70d847a9dfd56b972374f
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Empleo.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Empleo_Esp.unity
     guid: edf90a8ac5148f943be4fa0d3363796c
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Pollero.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Pollero_Esp.unity
     guid: 6816b895f135e05489196c353e6373c3
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Queretaro.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Queretaro_Esp.unity
     guid: f7cc1b452995fe540813700d546bca17
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Raite.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Raite_Esp.unity
     guid: 887d448eda084ce4cb8b2f11ec16d950
   - enabled: 1
     path: Assets/Scenes/Finales/Final_Amarillo.unity
@@ -111,24 +111,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Finales/Final_Verde.unity
     guid: b1601ebf8e09925448ed6496bf72eec5
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_Secuestran.unity
+    path: Assets/Scenes/Historias/Esp/Historia_Secuestran_Esp.unity
     guid: 236180e93f6936243a1201a83d74da7e
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_TeHanRobado.unity
+    path: Assets/Scenes/Historias/Esp/Historia_TeHanRobado_Esp.unity
     guid: 294260673bc25ba478e59cf73c0698ad
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_TeHanRobadoChihuahua.unity
+    path: Assets/Scenes/Historias/Esp/Historia_TeHanRobadoChihuahua_Esp.unity
     guid: bfdff1b90aee457499fbdb049654d1bf
   - enabled: 1
-    path: Assets/Scenes/Historias/Historia_TrenBestia.unity
+    path: Assets/Scenes/Historias/Esp/Historia_TrenBestia_Esp.unity
     guid: 1f7255d32918b0642a5a106447ab98f3
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Secuestran.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_Secuestran_Esp.unity
     guid: 00c2184e138d5e64591e7ba68ba4ade9
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_Tampico.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_Tampico_Esp.unity
     guid: ebf1b17fc851d3b47ae1e7fd8259c40c
   - enabled: 1
-    path: Assets/Scenes/Inicios/Inicio_TeHanRobadoChihuahua.unity
+    path: Assets/Scenes/Inicios/Esp/Inicio_TeHanRobadoChihuahua_Esp.unity
     guid: 05cb1d92c3efba6428474fcef24a6451
   m_configObjects: {}
