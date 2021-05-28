@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement; //6:03
 
 
 
-public class BackGround_HistoriaPolleroNL : MonoBehaviour
+public class BackGround_MaraTeEncontroEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "PolleroTeHaRobado";
+    public string resourceName = "MaraTeEncontroEng";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
@@ -16,7 +16,7 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
 
     void Awake()
     {
-        if (resourceName != "") //De donde se toman los nombres para las escenas
+        if (resourceName != "")
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
@@ -34,7 +34,7 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Fue en la noche cuando estaba hablando con su amigo. La plática, entre chismes y chistes, se centraba en cómo podían cruzar la frontera.";
+            txtMy.text = "You arrive in a small town at sunset. You see to your right and observe a graffiti that for a moment makes you fear.";
             noise1.Play();
             noise2.Play();
             currentSprite++;
@@ -42,65 +42,51 @@ public class BackGround_HistoriaPolleroNL : MonoBehaviour
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
-            Debug.Log("aber si sí");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Tal vez era por el iluminado lugar o sus caras de preocupación, pero llamaron la atención de una persona que les prometió una fácil solución.";
+            txtMy.text = "But you see a lot of people around you, so you feel safe.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Los llevó a un lugar cerca de donde se encontraban, y les señaló su trailer. La oferta que les propuso parecía tentadora: los cruzaría por México por sólo $2,500.";
+            txtMy.text = "What you were unaware of was that a small group of people had been following you for a moment, and the people on the street had already noticed.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te asomaste y viste que estaba vacío. Pensaste en un primer momento en todas las historias que escuchaste y no tuviste mucha confianza.";
+            txtMy.text = "You feel the presence of three people, and something in you tells you that you are in danger.";
             currentSprite++;
         }
         else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te sentaste a orillas del lugar, y esperaste. Pasó bastante tiempo...";
+            txtMy.text = "You accelerate the step and so do they. There is no turning back.";
             currentSprite++;
         }
         else if (currentSprite == 5)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Y poco a poco comenzó a subir más gente. Arrancó el trailer y viste a tu alrededor; sólo viste rostros cansados.";
+            txtMy.text = "Finally you decide to run. But it's useless, they were already waiting for you. Your intuition was right. It was the Maras Salvatruchas.";
             currentSprite++;
         }
         else if (currentSprite == 6)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Pasó algo de tiempo y la persona que los llevaba los bajó del lugar.";
+            txtMy.text = "They hit you and, finally, you were in so much pain from the blows that you couldn't get up. You will continue your journey the next day.";
             currentSprite++;
         }
         else if (currentSprite == 7)
         {
-            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
-			Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-			txtMy.text = "Y se fue. Con dudas por la forma apresurada con la que arrancó, no quedó mas que caminar por el único lugar que parecía llegar a un rumbo.";
-			      currentSprite++;
-        }
-        else if (currentSprite == 8)
-        {
-            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
-            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Y después de tanto caminar en el desierto, la noche te alcanzó. En eso, ves un letrero que confirmó tu sospecha: el pollero los estafó y nunca cruzó la frontera.";
-            currentSprite++;
-        }
-        else if (currentSprite == 9)
-        {
-            SceneManager.LoadScene("Inicio_HistoriaPolleroNL");
+            SceneManager.LoadScene("Inicio_MaraTeEncontroEng");
             currentSprite = 0;
-        }
+        }      
+        
 
     }
 }

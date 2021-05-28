@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement; //6:03
 
 
 
-public class BackGround_Manager : MonoBehaviour
+public class BackGround_SecuestranEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "HistoriaPollero";
+    public string resourceName = "TeHanSecuestradoEng";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
@@ -35,71 +35,71 @@ public class BackGround_Manager : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Fue en la noche cuando estaba hablando con su amigo. La plática, entre chismes y chistes, se centraba en cómo podían cruzar la frontera.";
+            txtMy.text = "On your way, you find yourself in a deserted area, with nothing to see but the horizon.";
             noise1.Play();
             noise2.Play();
             currentSprite++;
         }
+
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
-            Debug.Log("aber si sí");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Tal vez era por el iluminado lugar o sus caras de preocupación, pero llamaron la atención de una persona que les prometió una fácil solución";
+            txtMy.text = "Every step you take brings you closer to your goal and a better life.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Los llevó a un lugar cerca de donde se encontraban, y les señaló su trailer. La oferta que les propuso parecía tentadora: los cruzaría por México por sólo $2,500.";
+            txtMy.text = "After so much walking, you come across two silhouettes and a truck. Your intuition and experience tell you that something is wrong, but it is no longer possible to turn back: they have seen you.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te asomaste y viste qye estaba vacío. Pensaste en un primer momento en todas las historias que escuchaste y no tuviste mucha confianza.";
+            txtMy.text = "And now one of the subjects slowly approaches you, with a slow and sure step. Between the sun shining on you, and the fear, you can't see his face well.";
             currentSprite++;
         }
         else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te sentaste a orillas del lugar, y esperaste. Pasó bastante tiempo...";
+            txtMy.text = "Between menaces and shouts, he asks you to kneel down and put your hands behind your head. Fear, added to fatigue, makes you obey without hesitation.";
             currentSprite++;
         }
         else if (currentSprite == 5)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Y poco a poco comenzó a subir más gente. Arrancó el trailer y viste a tu alrededor; sólo viste rostros cansados.";
+            txtMy.text = "You stay still, for fear that they will do something to you. At that moment you hear their other companion coming, and between laughter and jokes they tell you that it's all over, that you have no way out.";
             currentSprite++;
         }
         else if (currentSprite == 6)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Pasó algo de tiempo y la persona que los llevaba los bajó del lugar.";
+            txtMy.text = "The next thing you see is darkness. They put you in their van, and between beatings and humiliation, they take all your money and belongings.";
             currentSprite++;
-        }
+        }   
         else if (currentSprite == 7)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
-			Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-			txtMy.text = "Y arrancó. Con dudas por la forma apresurada con la que arrancó, no quedó mas que caminar por el único lugar que parecía llegar a un rumbo.";
-			      currentSprite++;
-        }
-        else if (currentSprite == 8)
+            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            txtMy.text = "After a long time, they set you adrift in an unknown place. As they leave you hear them mock you even more. They leave you tied up, with nothing. You try to free yourself from the bonds...";
+            currentSprite++;
+        }   
+else if (currentSprite == 8)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Y después de tanto caminar, ves que sólo pudiste avanzar hasta Tenosique. ";
+            txtMy.text = "The hours go by and little by little you have freed yourself. Finally, after a long time, you finally get rid of your ties. There is nothing left to do but to continue on your way.";
             currentSprite++;
-        }
+        }   
         else if (currentSprite == 9)
         {
-            SceneManager.LoadScene("Inicio_InicioTenosique");
+            SceneManager.LoadScene("Inicio_SecuestranEng");
             currentSprite = 0;
         }
 

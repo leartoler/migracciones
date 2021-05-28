@@ -5,30 +5,28 @@ using UnityEngine.SceneManagement; //6:03
 
 
 
-public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
+public class BackGround_ManagerEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "NoPasaElTrenLaBestia";
+    public string resourceName = "HistoriaPolleroEng";
     public Sprite[] backgrounds;
-    public GameObject apiazcoUI;
-    public GameObject tampicoUI;
     public AudioSource noise1;
     public AudioSource noise2;
+    public AudioSource[] sounds;
 
-    void Start()
-    {
-        apiazcoUI.SetActive(false);
-        tampicoUI.SetActive(false);
-        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
-        noise1 = sounds[0];
-        noise2 = sounds[1];
-    }
-    
     void Awake()
     {
         if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
+
+    private void Start()
+    {
+        AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
+        noise1 = sounds[0];
+        noise2 = sounds[1];
+    }
+
 
     public void OnClickChangeBackground()
     {
@@ -37,7 +35,7 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Escuchaste alguna vez que, por donde estás, pasaba el ferrocaril a la que llaman La Bestia, la cual te acercará a tu destino.";
+            txtMy.text = "It was late at night when he was talking to his friend. The talk, between gossip and jokes, centered on how they could cross the border.";
             noise1.Play();
             noise2.Play();
             currentSprite++;
@@ -47,65 +45,63 @@ public class BackGround_NoPasaElTrenLaBestia : MonoBehaviour
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Debug.Log("aber si sí");
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Miras al horizonte y te encaminas hacia el lugar recomendado";
+            txtMy.text = "Maybe it was the illuminated place or their worried faces, but they caught the attention of a person who promised them an easy solution.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Después de tanto caminar, te encuentras con las vías que parecen ser de La Bestia. Las tomas como guía y te diriges hacia donde te lleven.";
+            txtMy.text = "He took them to a place near where they were staying, and pointed out his trailer. The offer he made seemed tempting: he would cross them through Mexico for only $125.00 dlls.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Caminas un largo camino y recorres kilómetros de vías.";
+            txtMy.text = "You looked out and saw that it was empty. You thought at first of all the stories you heard and didn't have much confidence.";
             currentSprite++;
         }
         else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Y no ves parada alguna.";
+            txtMy.text = "You sat on the edge of the place, and waited. A long time passed...";
             currentSprite++;
         }
         else if (currentSprite == 5)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "De pronto, ves una banca que resulta idónea para descansar tu cansado cuerpo.";
+            txtMy.text = "And gradually more and more people started to come up. The trailer started up and you looked around; all you saw were tired faces.";
             currentSprite++;
         }
         else if (currentSprite == 6)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te duermes. Para cuando despiertas sabes que, por el momento, no pasará La Bestia, y no sabes si continuar hacia Puebla o Tampico";
-            tampicoUI.SetActive (true);
-            apiazcoUI.SetActive (true);
-            
-        }       
-       
-    }
-      public void OnClickChangeTampico()
-    {        
-            if (currentSprite == 6)        
+            txtMy.text = "Some time passed and the person carrying them took them down from the site.";
+            currentSprite++;
+        }
+        else if (currentSprite == 7)
         {
-            //guadalajaraUI.SetActive (true); 
-            SceneManager.LoadScene("Inicio_Tampico");
+            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
+			Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+			txtMy.text = "And he left. With doubts because of the hasty way in which he started, there was nothing left to do but walk through the only place that seemed to have a direction.";
+			      currentSprite++;
+        }
+        else if (currentSprite == 8)
+        {
+            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
+            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            txtMy.text = "And after so much walking, you see that the migrant smuggler only passed them to Tenosique.";
+            currentSprite++;
+        }
+        else if (currentSprite == 9)
+        {
+            SceneManager.LoadScene("Inicio_InicioTenosiqueEng");
             currentSprite = 0;
         }
-    }
 
-    public void OnClickChangeApiazco()
-    {            
-            if (currentSprite == 6)
-        {
-             
-            SceneManager.LoadScene("Inicio_NoPasaElTrenLaBestia");
-            currentSprite = 0;
-        }
     }
 }

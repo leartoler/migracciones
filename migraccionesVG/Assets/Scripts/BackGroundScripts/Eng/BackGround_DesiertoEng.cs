@@ -3,18 +3,18 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement; 
 
-public class BackGround_Raite : MonoBehaviour
+public class BackGround_DesiertoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeDanUnAventon";
+    public string resourceName = "YaNoPuedesMasEng";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
     public AudioSource[] sounds;
-
+    
     void Awake()
     {
-        if (resourceName != "") //De donde se toman los nombres para las escenas. Va vacío
+        if (resourceName != "") //De donde se toman los nombres para las escenas. Empty
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
@@ -32,49 +32,56 @@ public class BackGround_Raite : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Estás en las inmediaciones de Puebla, una gran ciudad de la que has escuchado bastante.";
-            noise1.Play();
-            noise2.Play();
+            txtMy.text = "After a long way, and with many obstacles overcome, you find yourself already close to the border, walking in the desert, with the sun in front of you.";
+            noise1.Play();  
+            noise2.Play(); 
             currentSprite++;
         }
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Conforme caminas por la carretera pides un aventón.";
+            txtMy.text = "The long journey and the heat of the desert are making your body tired. You look for a place to rest, a place to sit for a moment.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Y pasan las horas y pocos pasan, y quienes lo hacen, no se detienen.";
+            txtMy.text = "To your right you find the only place that seems to give you some shelter.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Pasadas unas horas, una camioneta conducida por una pareja, se detiene. Te hacen una pequeña plática.";
+            txtMy.text = "You head towards it, with the heaviness of your luggage and the sand on your feet.";
             currentSprite++;
-        }
-        else if (currentSprite == 4)
+        }       
+          else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Y te invitan a subirte. Con tus cosas en la mano, te subes en la parte trasera de la camioneta.";
+            txtMy.text = "You approach the rocks, and the little shade there is.  You stretch your legs and, for a moment, close your eyes...";
             currentSprite++;
-        }
-        else if (currentSprite == 5)
+        }  
+          else if (currentSprite == 5)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "La ayuda de la pareja te hace descansar por un momento. Te es agradable el viento en tu rostro.";
+            txtMy.text = "Suddenly you fall into a deep sleep and the sun is no longer behind you; instead, the night now covers you.";
             currentSprite++;
-        }
-        else if (currentSprite == 6)
+        }  
+          else if (currentSprite == 6)
+        {
+            GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
+            Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            txtMy.text = "You missed a day, but your body needed it. You get up the next day to continue on your way.";
+            currentSprite++;
+        }  
+        else if (currentSprite == 7)
         {         
-            SceneManager.LoadScene("Inicio_Raite");
+            SceneManager.LoadScene("Inicio_TeHanRobadoChihuahuaEng");
             currentSprite = 0;
         }
 

@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement; //6:03
 
 
 
-public class BackGround_Intento : MonoBehaviour
+public class BackGround_IntentoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "Intento";
+    public string resourceName = "IntentoEng";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
@@ -34,7 +34,7 @@ public class BackGround_Intento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Has llegado a la frontera y lo que ves, después del río, son unos enormes barrotes que parecen alzarse hasta el cielo";
+            txtMy.text = "You have reached the border and what you see, after the river, are huge bars that seem to rise up to the sky.";
             noise1.Play();
             noise2.Play();
             currentSprite++;
@@ -44,26 +44,26 @@ public class BackGround_Intento : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Miras por el lado izquierdo y sólo ves la frontera extenderser hacia el infinito.";
+            txtMy.text = "You look on the left side and see only the border extending into infinity.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Miras ahora por la derecha e igualmente, la frontera parece extenderse más allá de lo que alcanzas a percibir.";
+            txtMy.text = "You now look to the right and, in the same way, the border seems to extend beyond what you can perceive.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Observas de nuevo aquellos barrotes y, después de tanto pensar, no te queda mas que buscar otra ruta, una más accesible. Continuas con tu viaje, ahora hacia Tijuana.";
+            txtMy.text = "You look again at those bars and, after so much thought, you haven't other choice than looking for another route, a more accessible one. You continue your journey, now towards Tijuana.";
             currentSprite++;
         }        
         else if (currentSprite == 4)
         {
-            SceneManager.LoadScene("Inicio_Intento");
+            SceneManager.LoadScene("Inicio_IntentoEng");
             currentSprite = 0;
         }
 

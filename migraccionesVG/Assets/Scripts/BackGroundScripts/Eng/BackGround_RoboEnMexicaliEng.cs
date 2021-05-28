@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement; //6:03
 
-public class BackGround_NarcotraficoMazatlan : MonoBehaviour
+
+
+public class BackGround_RoboEnMexicaliEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeCruzasConElNarco";
+    public string resourceName = "RoboEnMexicaliEng";
+    public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
-    public Sprite[] backgrounds;
-    
+    public AudioSource[] sounds;
+
     void Awake()
     {
-        if (resourceName != "") //De donde se toman los nombres para las escenas. Va vacío
+        if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
@@ -24,6 +27,7 @@ public class BackGround_NarcotraficoMazatlan : MonoBehaviour
         noise2 = sounds[1];
     }
 
+
     public void OnClickChangeBackground()
     {
 
@@ -31,44 +35,44 @@ public class BackGround_NarcotraficoMazatlan : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Avanzando hacia tu destino, te encuentras con una cruz en tu camino. No le das mayor importancia, pero algo en ti te indica que hay un peligro cerca.";
+            txtMy.text = "Near the border, and with your body completely tired, it got dark. You search, with the little strength you have left, for a place to rest.";
             noise1.Play();
             noise2.Play();
             currentSprite++;
         }
+
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "De repente te cruzas con dos personas, de aspecto intimidante, que comienzan a hacerte preguntas, una tras otra.";
+            txtMy.text = "You find a place to rest, but the lonely place does not give you the necessary confidence.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Son miembros de un grupo local del narcotráfico, de modales intimidantes pero de aspecto similar a cualquiera que hayas visto. Su cara lo delataba: no era la primera vez que hacían esto.";
+            txtMy.text = "In the end, exhaustion won out. You lie down and put your backpack aside.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con amenazas, te quitan el poco dinero que tenías e imperativamente te convencieron de no seguir. Al final, sólo te dejaron lo básico para regresarte.";
+            txtMy.text = "With your eyes closed, you think you hear something, but you don't give it enough importance. You continue to sleep.";
             currentSprite++;
         }
         else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Sin nada mas que un poco de comida y ropa, te regresas para tomar otra ruta. Aún con el miedo recorriendo tu cuerpo, nada detendrá tu camino hacia un mejor futuro.";
+            txtMy.text = "When you get up, you look around you: your things are gone. Sad and impotent, you have no choice but to resign yourself, get up and continue your journey.";
             currentSprite++;
-        }
+        } 
         else if (currentSprite == 5)
-        {         
-            SceneManager.LoadScene("Inicio_Aguascalientes");
+        {
+            SceneManager.LoadScene("Inicio_RoboEnMexicaliEng");
             currentSprite = 0;
         }
-
     }
 }

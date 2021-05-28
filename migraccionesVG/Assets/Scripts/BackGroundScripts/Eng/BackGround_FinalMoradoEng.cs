@@ -3,10 +3,10 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class BackGround_FinalMorado : MonoBehaviour
+public class BackGround_FinalMoradoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "Final_Morado";
+    public string resourceName = "Final_MoradoEng";
     public Sprite[] backgrounds;
     public GameObject Morado;
     public AudioSource noise1;
@@ -34,7 +34,7 @@ public class BackGround_FinalMorado : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "La migración centroamericana hacia el norte del continente ha sido constante durante los últimos 30 años. Se calcula que existen más de 4 millones de centroamericanos residiendo en Norte América: 57,976 en México; 172,020 en Canada, y 3,998,280 en Estados Unidos.";
+            txtMy.text = "Migration of Central Americans to the north of the continent has been constant during the last 30 years. It is estimated that there are more than 4 million Central Americans residing in North America: 57,976 in Mexico; 172,020 in Canada, and 3,998,280 in the United States.";
             currentSprite++;
             noise1.Play();
         }
@@ -50,7 +50,7 @@ public class BackGround_FinalMorado : MonoBehaviour
         else if (currentSprite == 2)
         {
             Morado.SetActive(true);
-            SceneManager.LoadScene("Creditos");
+            SceneManager.LoadScene("CreditosEng");
             Debug.Log("Se queda en true");
             currentSprite = 0;
         }

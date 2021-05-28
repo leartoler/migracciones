@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement; //6:03
 using UnityEngine.UI;
 
 
-public class BackGround_Queretaro : MonoBehaviour
+public class BackGround_QueretaroEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "Queretaro";
+    public string resourceName = "QueretaroEng";
     public Sprite[] backgrounds;
     public GameObject SanLuisPotosiUI;
     public GameObject IrapuatoUI;
@@ -38,7 +38,7 @@ public class BackGround_Queretaro : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Te encuentras en Querétaro, y un gran campo se te presenta. Tienes dos opciones: seguir por Irapuato o ir al norte por San Luis Potosi.";
+            txtMy.text = "You are in Querétaro, and a large field lies ahead of you. You have two options: continue through Irapuato or go north through San Luis Potosi.";
             noise1.Play();
             noise2.Play();
             SanLuisPotosiUI.SetActive(true);
@@ -50,7 +50,7 @@ public class BackGround_Queretaro : MonoBehaviour
             if (currentSprite == 0)
             {
                 //guadalajaraUI.SetActive (true); 
-                SceneManager.LoadScene("Inicio_SanLuisPotosi");
+                SceneManager.LoadScene("Inicio_SanLuisPotosiEng");
             currentSprite = 0;
         }
         }
@@ -60,7 +60,7 @@ public class BackGround_Queretaro : MonoBehaviour
             if (currentSprite == 0)
             {
 
-                SceneManager.LoadScene("Inicio_Irapuato");
+                SceneManager.LoadScene("Inicio_IrapuatoEng");
             currentSprite = 0;
         }
         }

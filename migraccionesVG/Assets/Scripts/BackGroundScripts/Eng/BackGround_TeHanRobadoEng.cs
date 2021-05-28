@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement; //6:03
 
 
 
-public class BackGround_TeHanRobado : MonoBehaviour
+public class BackGround_TeHanRobadoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeHanRobado";
+    public string resourceName = "TeHanRobadoEng";
     public Sprite[] backgrounds;
     public GameObject guadalajaraUI;
     public GameObject aguascalientesUI;
@@ -38,7 +38,7 @@ public class BackGround_TeHanRobado : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Cerca de la frontera, y con el cuerpo completamente cansado, te anocheció. Buscas, con las pocas fuerzas que te quedan, un lugar dónde descansar.";
+            txtMy.text = "Near the border, and with your body completely tired, it got dark. You search, with the little strength you have left, for a place to rest.";
             noise1.Play();
             noise2.Play();
             currentSprite++;
@@ -47,35 +47,35 @@ public class BackGround_TeHanRobado : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Encuentras un lugar para descansar, pero la soledad del lugar no te la confianza necesaria.";
+            txtMy.text = "You find a place to rest, but the lonely place does not give you the necessary confidence.";
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Al final, el cansanció ten ganó.Te acuestas y dejas tu mochila a un lado.";
+            txtMy.text = "In the end, exhaustion won out. You lie down and put your backpack aside.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con los ojos cerrados, crees escuchar algo, pero no le das la suficiente importancia. Sigues durmiendo.";
+            txtMy.text = "With your eyes closed, you think you hear something, but you don't give it enough importance. You continue to sleep.";
             currentSprite++;
         }
         else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Al levantarte, miras a tu alrededor: tus cosas han desaparecido. Con la tristeza e impotencia no te queda más que resignarte, levantarte y continuar con tu trayecto.";
+            txtMy.text = "When you get up, you look around you: your things are gone. Sad and impotent, you have no choice but to resign yourself, get up and continue your journey.";
             currentSprite++;
         } 
         else if (currentSprite == 5)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Tienes dos caminos: continuar por Guadalajara o Aguascalientes";
+            txtMy.text = "You have two ways: continue through Guadalajara or Aguascalientes.";
             guadalajaraUI.SetActive (true); 
             aguascalientesUI.SetActive (true);
         }
@@ -85,7 +85,7 @@ public class BackGround_TeHanRobado : MonoBehaviour
     {        
             if (currentSprite == 5)        
         {       
-            SceneManager.LoadScene("Inicio_Guadalajara");
+            SceneManager.LoadScene("Inicio_GuadalajaraEng");
             currentSprite = 0;
         }
     }
@@ -95,7 +95,7 @@ public class BackGround_TeHanRobado : MonoBehaviour
             if (currentSprite == 5)
         {
              
-            SceneManager.LoadScene("Inicio_Aguascalientes");
+            SceneManager.LoadScene("Inicio_AguascalientesEng");
             currentSprite = 0;
         }
     }

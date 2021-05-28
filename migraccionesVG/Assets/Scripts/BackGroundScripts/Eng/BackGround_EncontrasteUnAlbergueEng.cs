@@ -3,28 +3,29 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement; 
 
-public class BackGround_TeCruzasConElNarco : MonoBehaviour
+public class BackGround_EncontrasteUnAlbergueEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeCruzasConElNarco";
+    public string resourceName = "EncontrasteUnAlbergueEng";
     public Sprite[] backgrounds;
-    public AudioSource noise1;
-    public AudioSource noise2;
-    public AudioSource[] sounds;
+    public AudioSource noise1; //Musica 
+    public AudioSource noise2;  //Fondo
+    public AudioSource[] sounds; 
 
     void Awake()
     {
-        if (resourceName != "") //De donde se toman los nombres para las escenas. Va vacío
+        if (resourceName != "") //De donde se toman los nombres para las escenas
             backgrounds = Resources.LoadAll<Sprite>(resourceName);       
     }
 
-    private void Start()
+
+     private void Start()
     {
         AudioSource[] sounds = GetComponents<AudioSource>();// audioañadido en start
-        noise1 = sounds[0];
-        noise2 = sounds[1];
-    }
+        noise1 = sounds[0]; 
+        noise2 = sounds[1]; 
 
+    }
 
     public void OnClickChangeBackground()
     {
@@ -33,44 +34,44 @@ public class BackGround_TeCruzasConElNarco : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Avanzando hacia tu destino, te encuentras con una cruz en tu camino. No le das mayor importancia, pero algo en ti te indica que hay un peligro cerca.";
-            noise1.Play();
-            noise2.Play();
+            txtMy.text = "After so much walking, you're tired.";
+            noise1.Play();  
+            noise2.Play(); 
             currentSprite++;
         }
+
         else if (currentSprite == 1)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "De repente te cruzas con dos personas de aspecto intimidante, que comienzan a hacerte preguntas, una tras otra.";
+            txtMy.text = "Besides tiredness, the day is almost over and you haven't eaten.";            
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Eran miembros de un grupo del narcotráfico local, de modales intimidantes pero de aspecto similar a cualquiera que hayas visto. Su cara lo delataba: no era la primera vez que hacían esto.";
+            txtMy.text = "It took you a while to notice, but the house you are passing is a refuge.";
             currentSprite++;
         }
         else if (currentSprite == 3)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Con amenazas, te quitan el poco dinero que tenías e imperativamente te convencieron de no seguir. Al final, sólo te dejaron lo básico para regresarte.";
+            txtMy.text = "You knock, a bit hesitantly, and after a while, a person with a friendly but serious voice answers you. He invites you in for a little rest.";
             currentSprite++;
-        }
+        }        
         else if (currentSprite == 4)
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "Sin nada mas que un poco de comida y ropa, te regresas para tomar otra ruta. Aún con el miedo recorriendo tu cuerpo, nada detendrá tu camino hacia un mejor futuro.";
+            txtMy.text = "To the next day, with renewed energy, you continue on your way.";
             currentSprite++;
         }
         else if (currentSprite == 5)
-        {         
-            SceneManager.LoadScene("Inicio_NoPasaElTrenLaBestia");
+        {
+            SceneManager.LoadScene("Inicio_EncontrasteUnAlbergueEng");
             currentSprite = 0;
         }
-
     }
 }
