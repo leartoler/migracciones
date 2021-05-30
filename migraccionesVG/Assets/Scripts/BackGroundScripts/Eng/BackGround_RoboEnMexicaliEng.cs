@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_RoboEnMexicaliEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "RoboEnMexicaliEng";
+    public string resourceName = "RoboEnMexicali";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;

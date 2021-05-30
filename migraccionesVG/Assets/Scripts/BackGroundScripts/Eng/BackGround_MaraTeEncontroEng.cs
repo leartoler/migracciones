@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_MaraTeEncontroEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "MaraTeEncontroEng";
+    public string resourceName = "MaraTeEncontro";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;

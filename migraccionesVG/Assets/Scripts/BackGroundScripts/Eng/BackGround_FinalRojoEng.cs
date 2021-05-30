@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_FinalRojoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "Final_RojoEng";
+    public string resourceName = "Final_Rojo";
     public Sprite[] backgrounds;    
     public GameObject Rojo;
     public AudioSource noise1;
@@ -47,7 +47,7 @@ public class BackGround_FinalRojoEng : MonoBehaviour
         }
         else if (currentSprite == 2)
         {
-            SceneManager.LoadScene("CreditosEng");
+            SceneManager.LoadScene("Creditos");
             currentSprite = 0;
         }
 

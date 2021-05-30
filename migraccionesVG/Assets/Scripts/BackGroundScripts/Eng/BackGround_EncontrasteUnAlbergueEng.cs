@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_EncontrasteUnAlbergueEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "EncontrasteUnAlbergueEng";
+    public string resourceName = "EncontrasteUnAlbergue";
     public Sprite[] backgrounds;
     public AudioSource noise1; //Musica 
     public AudioSource noise2;  //Fondo

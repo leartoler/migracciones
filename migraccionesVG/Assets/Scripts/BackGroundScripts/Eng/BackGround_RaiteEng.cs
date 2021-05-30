@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_RaiteEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeDanUnAventonEng";
+    public string resourceName = "TeDanUnAventon";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;

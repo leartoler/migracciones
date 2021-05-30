@@ -231,7 +231,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 113871996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba483f538396d54cadc75de50481701, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bf516af26e0cd643af1468cb890af8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -502,8 +502,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 532636426}
-  - component: {fileID: 532636428}
   - component: {fileID: 532636427}
+  - component: {fileID: 532636428}
   m_Layer: 0
   m_Name: Waypoint (12)
   m_TagString: Untagged
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 532636425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f20986df4875c924d98e0e11ceb57e63, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ed2e1a272db5f54bad70a6f29675d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -604,8 +604,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 569999156}
-  - component: {fileID: 569999158}
   - component: {fileID: 569999157}
+  - component: {fileID: 569999158}
   m_Layer: 0
   m_Name: Waypoint (10)
   m_TagString: Untagged
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 569999155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a635195d737571648bc8095a306b2da0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1112ecfb4bbda584f91d1712e109e42a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 571792355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 793acef92ab1fba4a90f700a9bf1a320, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ccb439396ff28940840f187241bebbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -1247,7 +1247,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 809715044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7693cfa190a325f48b6c6e35c4d9d819, type: 3}
+  m_Script: {fileID: 11500000, guid: 25885cf8b3f12d94da4084caed8b08c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -1648,8 +1648,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449618470}
-  - component: {fileID: 1449618472}
   - component: {fileID: 1449618471}
+  - component: {fileID: 1449618472}
   m_Layer: 0
   m_Name: Waypoint (8)
   m_TagString: Untagged
@@ -1706,7 +1706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1449618469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0e664cd59cb48945a55ef6baae081dd, type: 3}
+  m_Script: {fileID: 11500000, guid: bc14487790441e5469078a0b4e5ae24a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -1901,7 +1901,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1712953279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6d56a561515ff4699d49b3b8a577ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ad422a56a35582408a71dc749985a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}
@@ -1947,7 +1947,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2100372279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d863182755bb25644a36aecf963b0857, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a3c35ca8ff2704186c0da3304e44a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player1: {fileID: 774242289}

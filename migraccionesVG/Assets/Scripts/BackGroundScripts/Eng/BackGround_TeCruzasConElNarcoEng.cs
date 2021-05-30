@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_TeCruzasConElNarcoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeCruzasConElNarcoEng";
+    public string resourceName = "TeCruzasConElNarco";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
@@ -49,7 +49,7 @@ public class BackGround_TeCruzasConElNarcoEng : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "They are members of a local drug trafficking group, with intimidating manners but similar in appearance to anyone you've ever seen. Their face revealed it: it wasn't the first time they had done this.";
+            txtMy.text = "They are members of a local drug dealers, with intimidating manners but similar in appearance to anyone you've ever seen. Their face revealed it: it wasn't the first time they had done this.";
             currentSprite++;
         }
         else if (currentSprite == 3)

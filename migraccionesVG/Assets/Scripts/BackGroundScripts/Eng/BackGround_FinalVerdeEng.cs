@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_FinalVerdeEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "Final_VerdeEng";
+    public string resourceName = "Final_Verde";
     public Sprite[] backgrounds;    
     public GameObject Verde;
     public AudioSource noise1;

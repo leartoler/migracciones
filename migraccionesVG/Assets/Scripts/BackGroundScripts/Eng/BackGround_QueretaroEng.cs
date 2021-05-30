@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class BackGround_QueretaroEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "QueretaroEng";
+    public string resourceName = "Queretaro";
     public Sprite[] backgrounds;
     public GameObject SanLuisPotosiUI;
     public GameObject IrapuatoUI;
@@ -38,7 +38,7 @@ public class BackGround_QueretaroEng : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "You are in Querétaro, and a large field lies ahead of you. You have two options: continue through Irapuato or go north through San Luis Potosi.";
+            txtMy.text = "You are in Querétaro, and a large field lies ahead of you. You have two options:";
             noise1.Play();
             noise2.Play();
             SanLuisPotosiUI.SetActive(true);

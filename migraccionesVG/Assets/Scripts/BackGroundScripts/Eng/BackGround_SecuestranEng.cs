@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_SecuestranEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeHanSecuestradoEng";
+    public string resourceName = "TeHanSecuestrado";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
@@ -52,7 +52,7 @@ public class BackGround_SecuestranEng : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "After so much walking, you come across two silhouettes and a truck. Your intuition and experience tell you that something is wrong, but it is no longer possible to turn back: they have seen you.";
+            txtMy.text = "After so much walking, you come across two silhouettes and a truck. Your intuition you that something is wrong, but it is no longer possible to turn back: they have seen you.";
             currentSprite++;
         }
         else if (currentSprite == 3)
@@ -73,7 +73,7 @@ public class BackGround_SecuestranEng : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "You stay still, for fear that they will do something to you. At that moment you hear their other companion coming, and between laughter and jokes they tell you that it's all over, that you have no way out.";
+            txtMy.text = "You stay still, for fear that they will do something to you. At that moment you hear their other companion coming, and between laughter they tell you that it's all over.";
             currentSprite++;
         }
         else if (currentSprite == 6)

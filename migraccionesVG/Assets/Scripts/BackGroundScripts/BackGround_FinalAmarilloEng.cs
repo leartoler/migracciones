@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement; 
@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_FinalAmarilloEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "Final_AmarilloEng";
+    public string resourceName = "Final_Amarillo";
     public Sprite[] backgrounds;
     public GameObject Amarillo;
     public AudioSource noise1;
@@ -45,13 +45,15 @@ public class BackGround_FinalAmarilloEng : MonoBehaviour
             txtMy.text = "";
             Amarillo.SetActive(false);
             Debug.Log("Se queda en false");
+            Debug.Log("que pasa aqui");
             currentSprite++;
         }
         else if (currentSprite == 2)
         {
             Amarillo.SetActive(true);
-            SceneManager.LoadScene("CreditosEng");
+            SceneManager.LoadScene("Creditos");
             Debug.Log("Se queda en true");
+            Debug.Log("demonios");
             currentSprite = 0;
         }  
 

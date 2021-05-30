@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Inicio_MainIng");
+        SceneManager.LoadScene("Inicio_MainEng");
     }
 
    public void JugarJuego()
@@ -44,14 +44,22 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Informacion_Raul");
     }
     
-    public void MainMenuScene()
+    public void MainMenuSceneEng()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenuEng");
+    }
+    public void MainMenuSceneEsp()
+    {
+        SceneManager.LoadScene("MainMenuEsp");
     }
 
-    public void Seleccion()
+    public void SeleccionEng()
     {
-        SceneManager.LoadScene("Seleccion_de_Personajes");
+        SceneManager.LoadScene("Seleccion_de_Personajes_Eng");
+    }
+    public void SeleccionEsp()
+    {
+        SceneManager.LoadScene("Seleccion_de_Personajes_Esp");
     }
     public void Repetir()
     {

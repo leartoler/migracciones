@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_NarcotraficoMazatlanEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeCruzasConElNarcoEng";
+    public string resourceName = "TeCruzasConElNarco";
     public AudioSource noise1;
     public AudioSource noise2;
     public Sprite[] backgrounds;

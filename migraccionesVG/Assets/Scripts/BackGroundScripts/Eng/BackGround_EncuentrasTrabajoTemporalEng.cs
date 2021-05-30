@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_EncuentrasTrabajoTemporalEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "BackGround_EncuentrasTrabajoTemporalEng";
+    public string resourceName = "BackGround_EncuentrasTrabajoTemporal";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;

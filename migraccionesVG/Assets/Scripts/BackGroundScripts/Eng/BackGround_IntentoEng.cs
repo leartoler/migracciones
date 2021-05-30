@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_IntentoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "IntentoEng";
+    public string resourceName = "Intento";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
@@ -58,7 +58,7 @@ public class BackGround_IntentoEng : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "You look again at those bars and, after so much thought, you haven't other choice than looking for another route, a more accessible one. You continue your journey, now towards Tijuana.";
+            txtMy.text = "You look again at those bars and, after so much thought, you haven't other choice than looking for another route. You continue your journey, now towards Tijuana.";
             currentSprite++;
         }        
         else if (currentSprite == 4)

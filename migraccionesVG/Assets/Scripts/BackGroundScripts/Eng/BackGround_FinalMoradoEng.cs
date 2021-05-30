@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_FinalMoradoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "Final_MoradoEng";
+    public string resourceName = "Final_Morado";
     public Sprite[] backgrounds;
     public GameObject Morado;
     public AudioSource noise1;

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_TeAgarroMigracionEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeAgarroMigracionEng";
+    public string resourceName = "TeAgarroMigracion";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;

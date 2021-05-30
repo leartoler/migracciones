@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_NoPasaElTrenLaBestiaEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "NoPasaElTrenLaBestiaEng";
+    public string resourceName = "NoPasaElTrenLaBestia";
     public Sprite[] backgrounds;
     public GameObject apiazcoUI;
     public GameObject tampicoUI;
@@ -37,7 +37,7 @@ public class BackGround_NoPasaElTrenLaBestiaEng : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];    
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "You ever hear that, where you are, a train called "The Beast" pass, which will bring you closer to your destination.";
+            txtMy.text = "You ever hear that, where you are, a train called 'The Beast' pass, which will bring you closer to your destination.";
             noise1.Play();
             noise2.Play();
             currentSprite++;
@@ -82,7 +82,7 @@ public class BackGround_NoPasaElTrenLaBestiaEng : MonoBehaviour
         {
             GameObject.Find("Panel").GetComponent<Image>().sprite = backgrounds[currentSprite];
             Text txtMy = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            txtMy.text = "You fall asleep. By the time you wake up you know that, for the moment, La Bestia will not pass, and you don't know whether to continue on to Puebla or Tampico.";
+            txtMy.text = "You fall asleep. By the time you wake up you know that, for the moment, La Bestia will not pass, you have two options:";
             tampicoUI.SetActive (true);
             apiazcoUI.SetActive (true);
             

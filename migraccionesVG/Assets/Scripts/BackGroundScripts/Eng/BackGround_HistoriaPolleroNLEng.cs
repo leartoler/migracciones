@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_HistoriaPolleroNLEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "PolleroTeHaRobadoEng";
+    public string resourceName = "PolleroTeHaRobado";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;

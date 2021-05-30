@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 261810382}
   - component: {fileID: 261810384}
   - component: {fileID: 261810383}
+  - component: {fileID: 261810385}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -280,7 +281,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261810378}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74fc521b1d9e5454c9abc02dbf249c3a, type: 3}
   m_Name: 
@@ -489,6 +490,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &261810385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261810378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb06885c7f42bb04e9a007969bbfb7f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceName: YaNoPuedesMas
+  backgrounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  noise1: {fileID: 261810384}
+  noise2: {fileID: 261810383}
+  sounds: []
 --- !u!1 &1137453493
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +924,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 261810382}
+      - m_Target: {fileID: 261810385}
         m_MethodName: OnClickChangeBackground
         m_Mode: 1
         m_Arguments:

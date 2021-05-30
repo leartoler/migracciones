@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement; //6:03
 public class BackGround_TeHanRobadoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "TeHanRobadoEng";
+    public string resourceName = "TeHanRobado";
     public Sprite[] backgrounds;
     public GameObject guadalajaraUI;
     public GameObject aguascalientesUI;

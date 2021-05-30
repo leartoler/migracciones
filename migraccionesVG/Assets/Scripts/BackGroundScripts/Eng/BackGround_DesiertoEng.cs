@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class BackGround_DesiertoEng : MonoBehaviour
 {
     public static int currentSprite = 0;
-    public string resourceName = "YaNoPuedesMasEng";
+    public string resourceName = "YaNoPuedesMas";
     public Sprite[] backgrounds;
     public AudioSource noise1;
     public AudioSource noise2;
